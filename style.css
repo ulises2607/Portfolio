@@ -9,19 +9,36 @@
         color: white;
     }
 
+    /* HEADER AND CELLPHONE ICONS */
+
     .phone-box {
         height: 44px;
         background-color: #3C3A39;
         display:flex;
         justify-content: space-between;
+        
+        
     }
 
-    .nav-header {
+    .nav-header{
         height: 44px;
         background-color: #3C3A39;
-        display: flex;
+        display:flex;
         justify-content: space-between;
     }
+    
+    .time {
+        padding-top: 16px;
+        padding-left: 21px;
+        
+    }
+
+    .cell-info {
+        padding-top: 17px;
+        padding-left: 14,67px;
+        
+    }
+
 
     .logo {
         width: 70px;
@@ -32,27 +49,23 @@
         font-weight: 700;
         font-size: 18px;
         line-height: 24px;
-        /* identical to box height, or 133% */
-
         display: flex;
         align-items: center;
         text-align: center;
 
-        /* Theme 3 / Neutral 11 */
-
-        color: #FFFFFF;
-
-
-        /* Inside auto layout */
-
         flex: none;
         order: 0;
         flex-grow: 0;
+
+        padding-left: 16px;
+        padding-top: 10px;
     }
 
+    
+
     .menu {
-        background-image: none;
-        
+        padding-right: 32px;
+        padding-top: 10px;
     }
    
     h1 {
@@ -70,6 +83,10 @@
         flex: none;
         order: 0;
         flex-grow: 0;
+
+        padding-top: 132px;
+
+        margin-bottom: 0px;
     }
 
     h2 {
@@ -78,24 +95,18 @@
         font-weight: 700;
         font-size: 24px;
         line-height: 32px;
-        /* or 133% */
 
         display: flex;
         align-items: center;
 
-        /* Theme 3 / Primary 4 */
-
         color: #FFF5E1;
 
-
-        /* Inside auto layout */
 
         flex: none;
         order: 1;
         flex-grow: 0;
+        
     }
-
-    
 
 }
 
