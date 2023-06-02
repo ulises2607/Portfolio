@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
+/* CSS RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+  body {
+    display: flex;
+    background: #1c1a19;
+    color: #fff5e1;
+    width: 100%;
+    margin: 0;
+  }
+
+  header {
+    min-width: 100%;
+  }
+
+  .main {
+    display: flex;
+    display: block;
+    flex-direction: column;
+    position: absolute;
+    padding: 40% 5% 15%;
+    left: 0;
+
+    /*  Background Image */
+
+    background-image: url("Images/bg-image.svg");
+    background-repeat: no-repeat;
+    background-position: bottom -30% right;
+  }
+
+  /* HEADER AND CELLPHONE ICONS */
+
+  .nav-header {
+    height: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3c3a39;
+    position: absolute;
+    text-decoration: none;
+  }
+
+  .logo {
+    width: auto;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 2.5%;
+    padding-left: 16px;
+  }
+
+  .logo:link {
+    text-decoration: none;
+  }
+
+  .logo:visited {
+    text-decoration: none;
+  }
+
+  .menu {
+    padding-right: 32px;
+    padding-top: 30px;
+  }
+
+  .title-name {
+    font-family: 'Crete Round', serif;
+    font-style: normal;
+    font-weight: 40px;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 0.37px;
+    color: #ff6b00;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-bottom: 0;
+  }
+
+  .title-about {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .presentation {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: opx;
+    flex: none;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .social-icon {
+    list-style-type: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    width: 200px;
+    height: 42px;
+    padding-top: 6%;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    display: none;
+  }
+}
