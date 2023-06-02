@@ -60,7 +60,7 @@
     padding-top: 10px;
   }
 
-  h1 {
+  .title-name {
     font-family: 'Crete Round', serif;
     font-style: normal;
     font-weight: 40px;
@@ -75,7 +75,7 @@
     margin-bottom: 0;
   }
 
-  h2 {
+  .title-about {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
