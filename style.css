@@ -139,7 +139,6 @@
         font-size: 40px;
         line-height: 52px;
         border-bottom: 5% solid black;
-        padding-left: 5%;
     }
     
     .recent.works h2 {
@@ -222,7 +221,7 @@
         display: flex;
         justify-content: center;
     }
-
+    
 }
 
 
