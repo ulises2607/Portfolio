@@ -45,11 +45,11 @@
         padding-left: 16px;
     }
     
-    .logo:link {
+    .logo, a:link {
         text-decoration: none;
     }
     
-    .logo:visited {
+    .logo, a:visited {
     text-decoration: none;
     }
     
@@ -186,16 +186,21 @@
         flex-direction: column;
         padding-left: 5%;
         padding-bottom: 30%;
+        
     }
     
     
-    .card-container .card {
-        background-image: url(Images/Work/Work-bg-1.png);
-        background-repeat: no-repeat;
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      background-image: url(Images/Work/Work-bg-1.png);
+      background-size: cover ;
+      height: 386px;
+      width: 100%;
         
-        height: auto;
-        width: 100%;
-        padding-left: 5%;
+        
     }
     
     .card h1 {
@@ -204,7 +209,7 @@
         font-weight: 400;
         font-size: 32px;
         line-height: 44px;
-    
+        padding-left: 5%;
         padding-top: 25%;
     }
     
@@ -213,14 +218,44 @@
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        line-height: 24px;  
+        line-height: 24px;
+        padding-left: 5%;  
+    }
+
+    .card-lang {
+      display: flex;
+      gap: 20px;
+      padding-left: 5%;
+    }
+
+    .card-lang li {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 20px;
+      padding: 10px 12px 10px 12px;
+      background-color: rgba(255, 255, 255, 0.24);
+      
     }
     
-    .card .btn-works {
-        height: 100%;
-        background: #FF6B00;
-        display: flex;
-        justify-content: center;
+    .btn-works {
+
+      color: white;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 24px;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.03em;
+      height:48px;
+      background: #FF6B00;
+      display: flex;
+      justify-content: center;
+      
+        
     }
 
     .about {
@@ -275,6 +310,10 @@
         align-items: center;
         padding: 12px;
         gap: 10px;
+    }
+
+    .knowledge {
+      text-align: center;
     }
 
     
