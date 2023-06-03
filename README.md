@@ -125,7 +125,6 @@ Install this project with:
 
 ### Usage
 
-
 -N/A
 
 ### Run tests
@@ -143,7 +142,6 @@ To run tests, run the following command:
 ### Deployment
 
 
-- N/A
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -166,8 +164,10 @@ To run tests, run the following command:
 
 
 - [1] **[My-Projects]**
-- [2] **[About-Me]**
-- [3] **[Contact-Me]**
+- [2] **[Animations]**
+- [3] **[Desktop Version]**
+
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -176,7 +176,7 @@ To run tests, run the following command:
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Thanks to my code reviewer @Kossi-stack to guide me to fix some mistakes
+- Microverse Code Reviewers
 
 Feel free to check the [issues page](../../issues/).
 
@@ -186,7 +186,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
--N/A
+If you like this project please comment on what you liked about it, and what I can improve on to make it better.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -195,17 +195,11 @@ Feel free to check the [issues page](../../issues/).
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-I would like to thank microverse team for provide me the tools to make this project
+I would like to thank microverse and my code reviewers team for provide me the tools to make this project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
 
-## ❓ FAQ <a name="faq"></a>
-
--N/A
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
