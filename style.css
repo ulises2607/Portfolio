@@ -122,7 +122,7 @@
 
   .recent-works {
     display: grid;
-    padding: 1% 6.5vw;
+    padding: 1% 5%;
     column-gap: 5px;
     row-gap: 34px;
   }
@@ -168,6 +168,10 @@
     padding: 10px 12px;
   }
 
+  .tech a:disabled {
+    background: #f4f1f0;
+  }
+
   .btn-works-1 {
     width: fit-content;
     background: #ff6b00;
@@ -180,11 +184,45 @@
     gap: 10px;
   }
 
+  .btn-works-1:hover {
+    background: #fff5e1;
+    border: 1px solid #f55800;
+    color: #f55800;
+  }
+
+  .btn-works-1:active {
+    background: #e05304;
+    color: white;
+  }
+
+  .card a:hover {
+    background: #fff5e1;
+    border: 1px solid #f55800;
+    color: #f55800;
+  }
+
+  .card a:active {
+    background: #e05304;
+    color: white;
+  }
+
+  .introduction a:hover {
+    background: #fff5e1;
+    border: 1px solid #f55800;
+    color: #f55800;
+  }
+
+  .introduction a:active {
+    background: #e05304;
+    color: white;
+  }
+
   .card-container {
     color: white;
     display: flex;
     flex-direction: column;
     padding-left: 5%;
+    padding-right: 5%;
     padding-bottom: 30%;
   }
 
@@ -292,7 +330,7 @@
     padding-bottom: 5%;
   }
 
-  .introduction a {
+  .get-resume {
     width: fit-content;
     background: #ff6b00;
     color: white;
