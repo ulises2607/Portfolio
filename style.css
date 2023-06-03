@@ -14,135 +14,215 @@
 }
 
 @media (min-width: 375px) and (max-width: 768px) {
-  body {
-    display: flex;
-    background: #1c1a19;
-    color: #fff5e1;
-    width: 100%;
-    margin: 0;
-  }
-
-  header {
-    min-width: 100%;
-  }
-
-  .main {
-    display: flex;
-    display: block;
-    flex-direction: column;
-    position: absolute;
-    padding: 40% 5% 15%;
-    left: 0;
-
-    /*  Background Image */
-
-    background-image: url("Images/Main/bg-image.svg");
-    background-repeat: no-repeat;
-    background-position: bottom -30% right;
-  }
-
-  /* HEADER AND CELLPHONE ICONS */
-
-  .nav-header {
-    height: 8%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: #3c3a39;
-    position: absolute;
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        background-color: #3c3a39;
+        height: 40px;
+        width: 100%;
+        text-decoration: none;
+    }
+    
+    header .logo{
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding-top: 15;
+        padding-left: 16px;
+    }
+    
+    .logo:link {
+        text-decoration: none;
+    }
+    
+    .logo:visited {
     text-decoration: none;
-  }
+    }
+    
+    header .menu {
+        padding-right: 32px;
+        padding-top: 13px;
+    }
+    
+    
+    .main {
+        background-color: #1c1a19;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 600px;
+        left: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+    
+    
+        background-image: url("Images/Main/bg-image.svg");
+        background-repeat: no-repeat;
+        background-position: bottom 3% right;
+    
+    }
+    
+    
+    .main h1 {
+        font-family: 'Crete Round', serif;
+        font-style: normal;
+        font-weight: 40px;
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: 0.37px;
+        color: #ff6b00;
+        margin-bottom: 0;
+        padding-top: 40%;
+    }
+    .main h2 {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .main .presentation {
+        display: block;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: opx;
+        flex: none;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    
+    .social-icon {
+        list-style-type: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        width: 200px;
+        height: 42px;
+        padding-top: 6%;
+    }
+    
+    /* Recent Work section */
+    
+    .recent-works {
+        display: grid;
+        padding: 1% 6.5vw;
+        column-gap: 5px;
+        row-gap: 34px
+    }
+    
+    .recent-works h1 {
+        font-family: 'Crete Round';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 52px;
+        border-bottom: 5% solid black;
+    }
+    
+    .recent.works h2 {
+        font-family: 'Crete Round';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 44px;
+        align-content: center;
+    
+    }
+    
+    .recent-works p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .tech {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-between;
+        height: 100%;
+    
+    }
+    
+    .btn-works-1 {
+        width: fit-content;
+        background: #FF6B00;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 12px;
+        gap: 10px;
+    }
+    
+    .card-container {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding-left: 5%;
+    }
+    
+    
+    .card-container .card {
+        background-image: url(Images/Work/Work-bg-1.png);
+        background-repeat: no-repeat;
+        
+        height: auto;
+        width: 100%;
+        padding-left: 5%;
+    }
+    
+    .card h1 {
+        font-family: 'Crete Round';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 44px;
+    
+        padding-top: 25%;
+    }
+    
+    .card p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;  
+    }
+    
+    .card .btn-works a {
+        height: 100%;
+        background: #FF6B00;
+        display: flex;
+        justify-content: center;
+    }
 
-  .logo {
-    width: auto;
-    height: auto;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding-top: 2.5%;
-    padding-left: 16px;
-  }
-
-  .logo:link {
-    text-decoration: none;
-  }
-
-  .logo:visited {
-    text-decoration: none;
-  }
-
-  .menu {
-    padding-right: 32px;
-    padding-top: 30px;
-  }
-
-  .title-name {
-    font-family: 'Crete Round', serif;
-    font-style: normal;
-    font-weight: 40px;
-    font-size: 56px;
-    line-height: 64px;
-    letter-spacing: 0.37px;
-    color: #ff6b00;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin-bottom: 0;
-  }
-
-  .title-about {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    display: flex;
-    align-items: center;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-  }
-
-  .presentation {
-    display: block;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    margin-left: opx;
-    flex: none;
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-
-  .social-icon {
-    list-style-type: none;
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 0;
-    width: 200px;
-    height: 42px;
-    padding-top: 6%;
-  }
 }
-
-
-/* Recen works section */
-
-.recent-works {
-  background-color: white;
-  height: 600px;
-}
-
-
 
 
 @media (min-width: 768px) {
