@@ -139,6 +139,7 @@
         font-size: 40px;
         line-height: 52px;
         border-bottom: 5% solid black;
+        padding-left: 5%;
     }
     
     .recent.works h2 {
@@ -215,7 +216,7 @@
         line-height: 24px;  
     }
     
-    .card .btn-works a {
+    .card .btn-works {
         height: 100%;
         background: #FF6B00;
         display: flex;
