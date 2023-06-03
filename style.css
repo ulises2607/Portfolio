@@ -242,7 +242,7 @@
     justify-content: center;
   }
 
-    /* ABOUT */
+  /* ABOUT */
 
   .about {
     background-color: #1c1a19;
@@ -299,6 +299,7 @@
 
   .knowledge {
     text-align: center;
+    padding-top: 30%;
   }
 }
 
