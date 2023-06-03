@@ -134,7 +134,13 @@
     font-size: 40px;
     line-height: 52px;
     text-align: center;
-    padding-top: 30%;
+    padding-top: 40%;
+    padding-bottom: 10%;
+    border-bottom: 1px solid black;
+  }
+
+  .img-work {
+    padding-top: 10%;
   }
 
   .recent-works h2 {
@@ -246,19 +252,21 @@
     padding-top: 25%;
   }
 
-  .card p {
+  .card-description {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     padding-left: 5%;
+    align-content: center;
   }
 
   .card-lang {
     display: flex;
     gap: 20px;
     padding-left: 5%;
+    align-items: center;
   }
 
   .card-lang li {
@@ -298,7 +306,6 @@
     height: auto;
     left: 0;
     padding-left: 5%;
-    padding-right: 5%;
   }
 
   .about .introduction {
@@ -328,6 +335,7 @@
     line-height: 24px;
     align-content: center;
     padding-bottom: 5%;
+    padding-right: 5%;
   }
 
   .get-resume {
@@ -342,9 +350,15 @@
     gap: 10px;
   }
 
+  .line-dev {
+    padding-top: 55%;
+  }
+
+  /* Knowledge */
+
   .knowledge {
     text-align: center;
-    padding-top: 12px;
+    padding-top: 30%;
   }
 
   .title-lang::before {

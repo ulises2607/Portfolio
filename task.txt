@@ -3,3 +3,6 @@ reorganizando las imagenes y los referencias
 revisar botones de cards
 
 - Working in about (agregado la estructura html)
+
+p to article
+center article in the cards
