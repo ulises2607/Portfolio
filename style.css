@@ -36,7 +36,7 @@
 
     /*  Background Image */
 
-    background-image: url("Images/bg-image.svg");
+    background-image: url("Images/Main/bg-image.svg");
     background-repeat: no-repeat;
     background-position: bottom -30% right;
   }
@@ -133,6 +133,17 @@
     padding-top: 6%;
   }
 }
+
+
+/* Recen works section */
+
+.recent-works {
+  background-color: white;
+  height: 600px;
+}
+
+
+
 
 @media (min-width: 768px) {
   body {
