@@ -44,12 +44,10 @@
     padding-left: 16px;
   }
 
-  .logo,
   a:link {
     text-decoration: none;
   }
 
-  .logo,
   a:visited {
     text-decoration: none;
   }
@@ -58,7 +56,6 @@
     padding-right: 32px;
     padding-top: 13px;
   }
-
 
   .main {
     background-color: #1c1a19;
@@ -74,7 +71,6 @@
     background-repeat: no-repeat;
     background-position: bottom 3% right;
   }
-
 
   .main h1 {
     font-family: 'Crete Round', serif;
@@ -132,7 +128,7 @@
   }
 
   .recent-works h1 {
-    font-family: 'Crete Round';
+    font-family: 'Crete Round', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -141,7 +137,7 @@
   }
 
   .recent.works h2 {
-    font-family: 'Crete Round';
+    font-family: 'Crete Round', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -150,7 +146,7 @@
   }
 
   .recent-works p {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -185,7 +181,6 @@
     padding-bottom: 30%;
   }
 
-
   .card {
     display: flex;
     flex-direction: column;
@@ -197,7 +192,7 @@
   }
 
   .card h1 {
-    font-family: 'Crete Round';
+    font-family: 'Crete Round', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -207,7 +202,7 @@
   }
 
   .card p {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -222,7 +217,7 @@
   }
 
   .card-lang li {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -233,7 +228,7 @@
 
   .btn-works {
     color: white;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
@@ -268,7 +263,7 @@
 
   .introduction h1 {
     color: #ff6b00;
-    font-family: 'Crete Round';
+    font-family: 'Crete Round', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 72px;
@@ -279,7 +274,7 @@
   }
 
   .introduction p {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
