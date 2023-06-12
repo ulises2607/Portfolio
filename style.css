@@ -160,18 +160,17 @@
   }
 
   .tech {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     list-style: none;
-    justify-content: space-between;
     height: 100%;
+    clear: both;
   }
 
   .tech a {
     color: black;
     border: 1px solid #8993a4;
     padding: 10px 12px;
+    float: left;
+    margin-right: 15px;
   }
 
   .tech a:disabled {
