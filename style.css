@@ -421,7 +421,7 @@ form {
   width: auto;
 
   padding: 1em;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -441,6 +441,28 @@ form input {
 form input:focus {
   outline: none;
   background-color: white;
+}
+
+.btn-contact {
+  background-color: #FF6B00;
+  padding: 5%;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  width: fit-content;
+  align-items: center;
+  justify-self: center;
+  color: #fff;
+}
+
+.btn-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
