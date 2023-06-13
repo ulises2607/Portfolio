@@ -403,6 +403,18 @@
   }
 }
 
+h2 {
+  font-family: Inter;
+font-size: 32px;
+font-weight: 700;
+line-height: 44px;
+letter-spacing: 0em;
+text-align: center;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+margin: 15% 2%;
+}
 @media (min-width: 768px) {
   body {
     display: none;
