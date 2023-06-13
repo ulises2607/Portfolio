@@ -473,6 +473,29 @@ form input:focus {
   align-items: center;
 }
 
+.socm-contact {
+  display: flex;
+  justify-content: center;
+}
+
+.social-ic-2{
+  list-style-type: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 0;
+  width: 200px;
+  height: 42px;
+  padding-top: 6%;
+  
+}
+ /* .social-ic-2 li {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+ } */
+
 
 @media (min-width: 768px) {
   body {
