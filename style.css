@@ -405,16 +405,44 @@
 
 h2 {
   font-family: Inter;
-font-size: 32px;
-font-weight: 700;
-line-height: 44px;
-letter-spacing: 0em;
-text-align: center;
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-margin: 15% 2%;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 15% 2%;
 }
+
+form {
+  margin: 5%;
+  width: auto;
+
+  padding: 1em;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  
+}
+
+form input {
+  margin: 3%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #DBD8D7;
+}
+
+form input:focus {
+  outline: none;
+  background-color: white;
+}
+
 @media (min-width: 768px) {
   body {
     display: none;
