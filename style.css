@@ -348,10 +348,15 @@
     align-items: center;
     padding: 12px;
     gap: 10px;
+    margin-bottom: 150px;
   }
 
   .line-dev {
-    padding-top: 55%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-right: 5%;
+    padding-top: 10%;
   }
 
   /* Knowledge */
