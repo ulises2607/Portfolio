@@ -402,12 +402,11 @@
     line-height: 43px;
   }
 
-      /* Contact Me Section */
+  /* Contact Me Section */
 
   .contact {
     display: flex;
     flex-direction: column;
-    
   }
 
   .art-contact {
@@ -415,7 +414,7 @@
     font-size: 32px;
     font-weight: 700;
     line-height: 44px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -423,40 +422,35 @@
     margin: 15% 5%;
     margin-bottom: 10%;
   }
-  
+
   form {
     margin: 5%;
     width: auto;
-  
     padding: 1em;
-  
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    
   }
-  
+
   form input {
     margin: 3%;
     border-top: none;
     border-right: none;
     border-left: none;
     padding-bottom: 10px;
-    border-bottom: 1px solid #DBD8D7;
+    border-bottom: 1px solid #dbd8d7;
   }
-  
+
   form input:focus {
     outline: none;
     background-color: white;
   }
-  
+
   #textarea {
     padding-left: 5%;
     justify-content: flex-start;
     padding-top: 10px;
-    background-color: #FBF8F7;
-    
+    background-color: #fbf8f7;
   }
 
   #textarea:focus {
@@ -467,9 +461,9 @@
   .contact-devider {
     margin-top: 20%;
   }
-  
+
   .btn-contact {
-    background-color: #FF6B00;
+    background-color: #ff6b00;
     padding: 5%;
     font-family: 'Inter', sans-serif;
     font-size: 17px;
@@ -482,7 +476,7 @@
     justify-self: center;
     color: #fff;
   }
-  
+
   .btn-div {
     display: flex;
     flex-wrap: wrap;
@@ -490,13 +484,13 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .socm-contact {
     display: flex;
     justify-content: center;
   }
-  
-  .social-ic-2{
+
+  .social-ic-2 {
     list-style-type: none;
     position: relative;
     display: flex;
@@ -506,7 +500,6 @@
     width: 200px;
     height: 42px;
     padding-top: 6%;
-    
   }
 
   .last-devider {
@@ -514,10 +507,7 @@
     justify-content: center;
     padding-top: 20%;
   }
-
 }
-
-
 
 @media (min-width: 768px) {
   body {
