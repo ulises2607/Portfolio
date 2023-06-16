@@ -13,11 +13,9 @@
   list-style: none;
 }
 
-
 body {
   display: flex;
   flex-direction: column;
-  
 }
 
 header {
@@ -52,7 +50,7 @@ a:visited {
   text-decoration: none;
 }
 
-.menu-desktop{
+.menu-desktop {
   display: none;
 }
 
@@ -79,7 +77,6 @@ header .menu {
 .bg-main-desk {
   display: none;
 }
-
 
 .main h1 {
   font-family: 'Crete Round', serif;
@@ -384,7 +381,7 @@ header .menu {
   content: url(Images/rhombus.svg);
 }
 
-.knowledge li .title-lang {
+.title-lang {
   font-family: 'InaiMathi', serif;
   font-style: normal;
   font-weight: 700;
@@ -395,7 +392,7 @@ header .menu {
   padding-bottom: 20px;
 }
 
-.knowledge li .title {
+.title {
   font-family: 'Inter', serif;
   font-style: normal;
   font-weight: 700;
@@ -542,7 +539,6 @@ form input:focus {
   padding-bottom: 3%;
 }
 
-
 @media (min-width: 768px) {
   body {
     display: flex;
@@ -557,7 +553,6 @@ form input:focus {
   header {
     height: 72px;
     justify-content: space-around;
-
   }
 
   header .menu-desktop {
@@ -565,7 +560,6 @@ form input:focus {
     justify-content: space-between;
     align-items: center;
     height: 72px;
-
   }
 
   header .logo {
@@ -573,10 +567,10 @@ form input:focus {
     padding-right: 50px;
   }
 
-  .menu-desktop a{
+  .menu-desktop a {
     width: 63px;
     height: 70px;
-    color: #FFFFFF;
+    color: #fff;
     font-family: 'Inter', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -598,7 +592,7 @@ form input:focus {
   a:link {
     text-decoration: none;
   }
-  
+
   a:visited {
     text-decoration: none;
   }
@@ -614,7 +608,7 @@ form input:focus {
 
   .social-icon {
     flex-direction: column;
-    flex:1;
+    flex: 1;
     height: auto;
     padding-top: 0%;
     align-self: center;
@@ -631,7 +625,7 @@ form input:focus {
 
   .intro-desktop {
     height: auto;
-    max-width: 30%x;
+    max-width: 30%;
     width: auto;
     padding-top: 0%;
     padding-left: 5%;
@@ -640,18 +634,29 @@ form input:focus {
   .title-name {
     padding-top: 0%;
   }
-  
-    /* Recent Work Section */
+
+  /* Recent Work Section */
 
   .recent-works {
     position: relative;
     width: fit-content;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 5%;
     margin-left: 10%;
     padding: 0;
+  }
+
+  .recent-w-title {
+    display: flex;
+  }
+
+  .recent-w-title img {
+    height: 2px;
+    width: 63%;
+    align-self: center;
   }
 
   .recent-works h1 {
@@ -661,18 +666,19 @@ form input:focus {
     border: none;
     padding: 0;
   }
+
   .img-work {
-    width: 60%;
+    width: 400px;
     height: auto;
     padding: 0%;
   }
 
   .mult-post {
-    width: auto;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
+    padding-left: 5%;
   }
 
   .mult-post h2 {
@@ -684,13 +690,12 @@ form input:focus {
   .mult-post p {
     width: 448px;
     height: auto;
-
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    color: #091E42;
+    color: #091e42;
     padding-bottom: 10px;
   }
 
@@ -702,137 +707,69 @@ form input:focus {
   }
 
   .tech a {
-    
     justify-content: none;
     width: 43px;
     height: 20px;
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    color: #091E42;
+    color: #091e42;
   }
 
   .container {
     display: flex;
     justify-content: none;
     width: fit-content;
-
   }
 
-    /* Cards section*/
+  /* Cards section */
   .card-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 3%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
     padding-top: 3%;
     padding-bottom: 10%;
   }
 
-    /* About me Section */
-
-    .about{
-      height: auto;
-      background-color: white;
-    }
-    
-
-   .introduction {
-      background-image: url(Images/About/desktop-about.png);
-      background-repeat: no-repeat;
-      background-position: bottom 150px right;
-      background-size: 460px 300px;
-      align-items: center;
-   }
-
-   .present-ab {
-    width: 40%;
-   }
-
-   .knowledge {
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
-    column-gap: 10%;
-    padding-top: 0;
-    
-   }
-
-   .contact {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-   }
-
-   .contact-devider {
-    display: none;
-  
-   }
-
-   .contact.container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-   }
-
-   .contact article {
-    display: flex;
-    justify-content: flex-start;
-    width: 20%;
-    margin: 0px;
-    
-   }
-
-   .contact-container-2 {
-    display: flex;
-   }
-
-   form {
-    width: 300px;
-    justify-content: flex-end;
-    margin-left: 0px;
-   }
-
-  .contact-devider, .last-devider {
-    display: none;
-  }
-
-  .socm-contact {
-    width: fit-content;
-  }
-
-  /* Card Section */
-
   .card {
-    justify-content: end;
-    width: 369px;
-    height: 435px;
+    width: 100%;
+    min-width: none;
+    height: 400px;
   }
 
   .card h1 {
     display: none;
   }
 
+  .card-description {
+    padding-left: 0%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .card-lang {
+    padding-left: 0%;
+  }
+
   .btn-works {
     display: none;
   }
 
-  
   .card-1 {
     background-image: url(Images/Work/Desktop/c1.png);
-    
   }
 
-  .card-1 .btn-works{
+  .card-1 .btn-works {
     display: flex;
   }
 
-  .card-1 article,li {
+  .card-1 article {
+    display: none;
+  }
+
+  .card-1 li {
     display: none;
   }
 
@@ -844,36 +781,192 @@ form input:focus {
     padding: 5%;
   }
 
-
-  .card-2 h2{
+  .card-2 h2 {
     display: flex;
-    width: 337px;
+    width: 100%;
     height: 81px;
-    font-family: 'Crete Round';
+    font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 44px;
-    color: #FFFFFF;
+    color: #fff;
   }
 
-  .card-5 h2{
+  .card-5 h2 {
     display: flex;
-    width: 337px;
-    height: 81px;
-    font-family: 'Crete Round';
+    font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 44px;
-    color: #FFFFFF;
+    color: #fff;
   }
 
   .card-3,
   .card-6 {
     background-image: url(Images/Work/Desktop/WebPortfolio-bg.png);
+    justify-content: end;
+    padding: 5%;
   }
 
+  .card-3 h2 {
+    display: flex;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+  }
+
+  .card-6 h2 {
+    display: flex;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+  }
+
+  .card-4 h1 {
+    display: flex;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+    padding-left: 0%;
+  }
+
+  .card-4 {
+    justify-content: end;
+    padding: 5%;
+  }
+
+  /* About me Section */
+
+  .about {
+    width: fit-content;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .introduction {
+    background-image: url(Images/About/desktop-about.png);
+    background-repeat: no-repeat;
+    background-position: bottom 150px right;
+    background-size: 460px 300px;
+    align-items: center;
+  }
+
+  .present-ab {
+    width: 40%;
+  }
+
+  .line-dev {
+    padding: 0%;
+    padding-right: 5%;
+  }
+
+  .knowledge {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    column-gap: 10px;
+    padding-top: 10%;
+    padding-right: 5%;
+  }
+
+  .knowledge li {
+    margin-bottom: 18px;
+  }
+
+  .items {
+    width: 114px;
+    height: 24px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 43px;
+
+    /* or 194% */
+
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+
+  .contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contact-devider {
+    display: none;
+  }
+
+  .contact.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact article {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    margin: 0;
+    padding-right: 20px;
+  }
+
+  .contact-container-2 {
+    display: flex;
+    justify-content: center;
+    margin: 80px;
+  }
+
+  form {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 0%;
+    margin-bottom: 100px;
+    padding-left: 5px;
+  }
+
+  #textarea {
+    padding-left: 2%;
+  }
+
+  .contact-devider,
+  .last-devider {
+    display: none;
+  }
+
+  .btn-div {
+    padding: 20px;
+    margin-top: 20px;
+    padding-left: 0;
+    align-items: flex-start;
+  }
+
+  .btn-contact {
+    padding: 20px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    border-top: black 1px solid;
+  }
 }
-
-
