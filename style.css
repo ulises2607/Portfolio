@@ -173,14 +173,15 @@ header .menu {
   flex-direction: row;
   align-items: center;
   list-style: none;
-  justify-content: space-between;
+  margin-right: 2%;
   height: 100%;
 }
 
-.tech a {
+.tech li {
   color: black;
   border: 1px solid #8993a4;
   padding: 10px 12px;
+  margin-right: 4%;
 }
 
 .tech a:disabled {
@@ -317,7 +318,7 @@ header .menu {
   padding-left: 5%;
 }
 
-.about .introduction {
+.introduction {
   height: 600px;
   background-image: url("Images/About/bg-about.png");
   background-repeat: no-repeat;
@@ -635,4 +636,85 @@ form input:focus {
   .title-name {
     padding-top: 0%;
   }
+  
+    /* Recent Work Section */
+
+  .recent-works h1 {
+    width: 100%;
+    height: fit-content;
+    border: none;
+    padding: 0;
+  }
+  .img-work {
+    width: 684px;
+    height: 448px;
+    padding: 0%;
+  }
+
+  .mult-post {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+
+  .mulp-post h2 {
+    margin-left: 100%;
+  }
+
+  .recent-works {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tech {
+    justify-content: none;
+    height: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+
+  .tech li {
+    height: auto;
+    
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+  }
+
+    /* Cards section*/
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3%;
+    padding-top: 3%;
+    padding-bottom: 10%;
+  }
+
+    /* About me Section */
+    
+
+   .introduction {
+      background-image: url(Images/About/desktop-about.png);
+      background-repeat: no-repeat;
+      background-position: bottom 150px right;
+      background-size: 460px 300px;
+      align-items: center;
+   }
+
+   .present-ab {
+    width: 40%;
+   }
+
+   .knowledge {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10%;
+    padding-top: 250px;
+   }
+
 }
+
