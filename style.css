@@ -122,6 +122,12 @@ header .menu {
   width: 200px;
   height: 42px;
   padding-top: 6%;
+  transition: all 0.5s ease-out;
+}
+
+.social-icon:hover {
+  background-color:#3e4844;
+  box-shadow: 0 0 35px #f27e12;
 }
 
 /* Recent Work section */
