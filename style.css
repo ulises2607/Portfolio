@@ -262,6 +262,10 @@ header .menu {
   padding-top: 25%;
 }
 
+.card h2 {
+  display: none;
+}
+
 .card-description {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -639,33 +643,55 @@ form input:focus {
   
     /* Recent Work Section */
 
+  .recent-works {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    margin-left: 10%;
+    padding: 0;
+  }
+
   .recent-works h1 {
     width: 100%;
     height: fit-content;
+    text-align: start;
     border: none;
     padding: 0;
   }
   .img-work {
-    width: 684px;
-    height: 448px;
+    width: 60%;
+    height: auto;
     padding: 0%;
   }
 
   .mult-post {
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
     padding-left: 10px;
   }
 
-  .mulp-post h2 {
-    margin-left: 100%;
+  .mult-post h2 {
+    width: 448px;
+    height: auto;
+    padding-bottom: 20px;
   }
 
-  .recent-works {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  .mult-post p {
+    width: 448px;
+    height: auto;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #091E42;
+    padding-bottom: 10px;
   }
 
   .tech {
@@ -675,14 +701,24 @@ form input:focus {
     padding-bottom: 4%;
   }
 
-  .tech li {
-    height: auto;
+  .tech a {
     
+    justify-content: none;
+    width: 43px;
+    height: 20px;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #091E42;
   }
 
   .container {
     display: flex;
-    width: 100%;
+    justify-content: none;
+    width: fit-content;
+
   }
 
     /* Cards section*/
@@ -695,6 +731,11 @@ form input:focus {
   }
 
     /* About me Section */
+
+    .about{
+      height: auto;
+      background-color: white;
+    }
     
 
    .introduction {
@@ -710,11 +751,129 @@ form input:focus {
    }
 
    .knowledge {
+    color: white;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    height: auto;
     column-gap: 10%;
-    padding-top: 250px;
+    padding-top: 0;
+    
    }
 
+   .contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   }
+
+   .contact-devider {
+    display: none;
+  
+   }
+
+   .contact.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   }
+
+   .contact article {
+    display: flex;
+    justify-content: flex-start;
+    width: 20%;
+    margin: 0px;
+    
+   }
+
+   .contact-container-2 {
+    display: flex;
+   }
+
+   form {
+    width: 300px;
+    justify-content: flex-end;
+    margin-left: 0px;
+   }
+
+  .contact-devider, .last-devider {
+    display: none;
+  }
+
+  .socm-contact {
+    width: fit-content;
+  }
+
+  /* Card Section */
+
+  .card {
+    justify-content: end;
+    width: 369px;
+    height: 435px;
+  }
+
+  .card h1 {
+    display: none;
+  }
+
+  .btn-works {
+    display: none;
+  }
+
+  
+  .card-1 {
+    background-image: url(Images/Work/Desktop/c1.png);
+    
+  }
+
+  .card-1 .btn-works{
+    display: flex;
+  }
+
+  .card-1 article,li {
+    display: none;
+  }
+
+  .card-2,
+  .card-5 {
+    background-image: url(Images/Work/Desktop/Healthcare-bk.png);
+    background-repeat: no-repeat;
+    justify-content: end;
+    padding: 5%;
+  }
+
+
+  .card-2 h2{
+    display: flex;
+    width: 337px;
+    height: 81px;
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFFFF;
+  }
+
+  .card-5 h2{
+    display: flex;
+    width: 337px;
+    height: 81px;
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFFFF;
+  }
+
+  .card-3,
+  .card-6 {
+    background-image: url(Images/Work/Desktop/WebPortfolio-bg.png);
+  }
+
 }
+
 
