@@ -18,6 +18,8 @@ body {
   flex-direction: column;
 }
 
+/* HEADER */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -39,7 +41,7 @@ header .logo {
   align-items: center;
   text-align: center;
   padding-top: 15;
-  padding-left: 16px;
+  padding-left: 1vh;
 }
 
 a:link {
@@ -55,9 +57,11 @@ a:visited {
 }
 
 header .menu {
-  padding-right: 32px;
+  padding-right: 2vw;
   padding-top: 13px;
 }
+
+/* MAIN */
 
 .main {
   background-color: #1c1a19;
@@ -87,25 +91,25 @@ header .menu {
   letter-spacing: 0.37px;
   color: #ff6b00;
   margin-bottom: 0;
-  padding-top: 35%;
+  padding-top: 6vh;
 }
 
 .main h2 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5em;
+  line-height: 2em;
   display: flex;
   align-items: center;
 }
 
-.main .presentation {
+.main p {
   display: block;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 24px;
   margin-left: opx;
   flex: none;
@@ -122,11 +126,18 @@ header .menu {
   width: 200px;
   height: 42px;
   padding-top: 6%;
+  transition: all 0.5s ease-out;
+}
+
+.social-icon:hover {
+  background-color: #3e4844;
+  box-shadow: 0 0 35px #f27e12;
 }
 
 /* Recent Work section */
 
 .recent-works {
+  width: 100%;
   display: grid;
   padding: 1% 5%;
   column-gap: 5px;
@@ -137,19 +148,24 @@ header .menu {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 2vh;
   line-height: 52px;
   text-align: center;
-  padding-top: 40%;
+  padding-top: 60px;
   padding-bottom: 10%;
   border-bottom: 1px solid black;
 }
 
-.img-work {
-  padding-top: 10%;
+.recent-w-title img {
+  display: none;
 }
 
-.recent-works h2 {
+.img-work {
+  padding-top: 10%;
+  padding-bottom: 12px;
+}
+
+.mult-post h2 {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
@@ -157,12 +173,13 @@ header .menu {
   line-height: 44px;
 }
 
-.recent-works p {
+.mult-post p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  padding-bottom: 10px;
 }
 
 .tech {
@@ -172,6 +189,7 @@ header .menu {
   list-style: none;
   margin-right: 2%;
   height: 100%;
+  margin-bottom: 8px;
 }
 
 .tech li {
@@ -287,7 +305,19 @@ header .menu {
   font-size: 15px;
   line-height: 20px;
   padding: 10px 12px 10px 12px;
+  animation-name: lang-color-changes;
+  animation-duration: 3s;
   background-color: rgba(255, 255, 255, 0.24);
+}
+
+@keyframes lang-color-changes {
+  from {
+    background-color: #f4f1f0;
+  }
+
+  to {
+    background-color: #e05304;
+  }
 }
 
 .btn-works {
@@ -541,34 +571,42 @@ form input:focus {
 
 @media (min-width: 768px) {
   body {
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: 0;
   }
 
+  /* HEADER */
   .hamb-icon {
     display: none;
   }
 
   header {
     height: 72px;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
-  header .menu-desktop {
+  .menu-desktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 72px;
+    margin-right: 350px;
+    width: content;
   }
 
   header .logo {
-    padding-left: 0;
+    margin-left: 130px;
     padding-right: 50px;
   }
 
-  .menu-desktop a {
-    width: 63px;
+  .menu img {
+    margin-bottom: 25px;
+  }
+
+  .element {
+    width: fit-content;
     height: 70px;
     color: #fff;
     font-family: 'Inter', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -580,115 +618,161 @@ form input:focus {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-right: 15%;
+    margin-right: 20%;
     margin-bottom: 11.5%;
   }
 
-  .menu-desktop img {
-    align-self: flex-start;
-    padding-top: 8%;
-  }
-
-  a:link {
+  .element:link {
     text-decoration: none;
   }
 
-  a:visited {
-    text-decoration: none;
-  }
+
+  /* MAIN DESKTOP */
 
   .main {
-    /* display: grid;
-    grid-template-columns: repeat(3,1fr); */
+    height: 870px;
     flex-direction: row-reverse;
     background-image: none;
     padding-right: 0;
-    padding-left: 2%;
+    padding-left: 5%;
+    align-items: flex-start;
   }
 
   .social-icon {
+    width: 40px;
+    height: auto;
     flex-direction: column;
     flex: 1;
-    height: auto;
     padding-top: 0%;
     align-self: center;
   }
 
+  .intro-desktop {
+    display: flex;
+    width: 40%;
+    max-width: 566px;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 20px;
+    justify-content: center;
+  }
+
+  .main h1 {
+    max-width: 90%;
+    min-width: 30%;
+    height: auto;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5vw;
+    line-height: 1em;
+    padding-top: 150px;
+    padding-bottom: 0.5em;
+    color: #f55800;
+  }
+
+  .main h2 {
+    width: 100%;
+    max-width: 566px;
+    height: auto;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32px;
+    padding-bottom: 0.5em;
+    color: #f4f5f7;
+  }
+
+  .main p {
+    width: 100%;
+    height: 123px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #f4f5f7;
+  }
+
   .bg-main-desk {
     display: block;
-    width: 110%;
-    min-width: 400px;
-    height: auto;
-    float: left;
-    margin-left: 5%;
-  }
-
-  .intro-desktop {
-    height: auto;
-    max-width: 30%;
-    width: auto;
-    padding-top: 0%;
-    padding-left: 5%;
-  }
-
-  .title-name {
-    padding-top: 0%;
+    width: 60%;
+    max-width: 1100px;
+    height: 750px;
+    padding-left: 10%;
   }
 
   /* Recent Work Section */
 
   .recent-works {
     position: relative;
-    width: fit-content;
-    height: auto;
+    width: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5%;
-    margin-left: 10%;
+    margin-top: 8%;
+    margin-left: 8%;
+    margin-bottom: 0;
     padding: 0;
   }
 
   .recent-w-title {
     display: flex;
+    width: 100%;
+    align-items: start;
   }
 
   .recent-w-title img {
+    display: flex;
     height: 2px;
-    width: 63%;
+    width: 65%;
     align-self: center;
   }
 
-  .recent-works h1 {
-    width: 100%;
-    height: fit-content;
+  .recent-w-title h1 {
+    width: 30%;
+    max-width: fit-content;
+    height: 40px;
+    justify-content: flex-start;
     text-align: start;
     border: none;
     padding: 0;
+    margin-bottom: 3%;
+    font-family: 'Crete Round', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
   }
 
   .img-work {
-    width: 400px;
+    width: 45%;
+    min-width: 30%;
     height: auto;
+    min-height: 10%;
     padding: 0%;
   }
 
   .mult-post {
-    width: 100%;
+    width: 40%;
     height: auto;
     display: flex;
     flex-direction: column;
-    padding-left: 5%;
+    text-align: start;
+    padding-left: 2%;
   }
 
   .mult-post h2 {
-    width: 448px;
+    width: 100%;
     height: auto;
-    padding-bottom: 20px;
+    padding-bottom: 3%;
   }
 
   .mult-post p {
-    width: 448px;
+    width: 100%;
+    max-width: 448px;
     height: auto;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -696,7 +780,7 @@ form input:focus {
     font-size: 20px;
     line-height: 28px;
     color: #091e42;
-    padding-bottom: 10px;
+    padding-bottom: 3%;
   }
 
   .tech {
@@ -706,7 +790,7 @@ form input:focus {
     padding-bottom: 4%;
   }
 
-  .tech a {
+  .tech-btn a {
     justify-content: none;
     width: 43px;
     height: 20px;
@@ -720,8 +804,8 @@ form input:focus {
 
   .container {
     display: flex;
-    justify-content: none;
-    width: fit-content;
+    align-items: flex-start;
+    width: 100%;
   }
 
   /* Cards section */
@@ -736,7 +820,8 @@ form input:focus {
   .card {
     width: 100%;
     min-width: none;
-    height: 400px;
+    height: auto;
+    min-height: 400px;
   }
 
   .card h1 {
@@ -853,13 +938,23 @@ form input:focus {
     height: 1200px;
     display: flex;
     flex-direction: column;
+    background: #262626;
+  }
+
+  .about h1 {
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 82px;
+    color: #f55800;
   }
 
   .introduction {
     background-image: url(Images/About/desktop-about.png);
     background-repeat: no-repeat;
     background-position: bottom 150px right;
-    background-size: 460px 300px;
+    background-size: 660px 350px;
     align-items: center;
   }
 
@@ -867,7 +962,27 @@ form input:focus {
     width: 40%;
   }
 
+  .present-ab p {
+    font-size: 120%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    padding-bottom: 8%;
+  }
+
+  .get-resume {
+    width: fit-content;
+    height: auto;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 140px;
+  }
+
   .line-dev {
+    height: 1px;
     padding: 0%;
     padding-right: 5%;
   }
@@ -880,24 +995,33 @@ form input:focus {
     height: auto;
     column-gap: 10px;
     padding-top: 10%;
-    padding-right: 5%;
+    padding-right: 10%;
+  }
+
+  .lang {
+    text-align: start;
+  }
+
+  .frameworks {
+    text-align: start;
+  }
+
+  .skills {
+    text-align: start;
   }
 
   .knowledge li {
-    margin-bottom: 18px;
+    margin-bottom: 15px;
   }
 
   .items {
     width: 114px;
     height: 24px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 43px;
-
-    /* or 194% */
-
     display: flex;
     align-items: center;
     color: #fff;
@@ -927,6 +1051,13 @@ form input:focus {
     width: 50%;
     margin: 0;
     padding-right: 20px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    align-items: center;
+    color: #262626;
   }
 
   .contact-container-2 {
