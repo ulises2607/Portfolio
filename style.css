@@ -309,13 +309,15 @@ header .menu {
   animation-duration: 3s;
   background-color: rgba(255, 255, 255, 0.24);
 }
+
 @keyframes lang-color-changes {
-from {
-  background-color: #f4f1f0;
-}
-to {
-  background-color: #e05304;
-}
+  from {
+    background-color: #f4f1f0;
+  }
+
+  to {
+    background-color: #e05304;
+  }
 }
 
 @keyframes lang-color-changes {
