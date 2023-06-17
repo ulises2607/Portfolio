@@ -991,20 +991,19 @@ form input:focus {
   }
 
   .line-dev {
-    height: 1px;
-    padding: 0%;
-    padding-right: 5%;
+    display: none;
   }
 
   .knowledge {
     color: white;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     height: auto;
     column-gap: 10px;
-    padding-top: 10%;
-    padding-right: 10%;
+    padding-top: 7%;
+    margin-top: 4%;
+    border-top: 1px solid #fff;
   }
 
   .lang {
@@ -1066,7 +1065,7 @@ form input:focus {
     font-size: 40px;
     line-height: 52px;
     align-items: center;
-    color: #262626;
+    color: #172b4d;
   }
 
   .contact-container-2 {
