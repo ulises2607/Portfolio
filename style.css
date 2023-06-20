@@ -80,7 +80,7 @@ header .menu {
   padding-right: 5%;
   background-image: url("Images/Main/bg-image.svg");
   background-repeat: no-repeat;
-  background-position: bottom 3% right;
+  background-position: bottom 5% right;
 }
 
 .bg-main-desk {
@@ -90,6 +90,7 @@ header .menu {
 .main h1 {
   font-family: "Crete Round", serif;
   font-style: normal;
+  font-weight: 400;
   font-weight: 4rem;
   font-size: 5.6rem;
   line-height: 6.4rem;
@@ -104,8 +105,8 @@ header .menu {
   font-style: normal;
   font-weight: 700;
   /* Consider changing the below em to rem DR */
-  font-size: 1.5em;
-  line-height: 2em;
+  font-size: 3rem;
+  line-height: 6rem;
   display: flex;
   align-items: center;
 }
@@ -115,11 +116,8 @@ header .menu {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
-  /* em to rem */
-  font-size: 1em;
+  font-size: 1.6rem;
   line-height: 2.4rem;
-  /* fix margin-left */
-  margin-left: opx;
   flex: none;
   margin-bottom: 0;
   margin-top: 0;
@@ -133,13 +131,11 @@ header .menu {
 
 .social-icon {
   list-style-type: none;
-  /* position: relative; */
   display: flex;
   align-items: center;
   padding: 0;
   width: 20rem;
   height: 4.2rem;
-  /* padding-top: 6%; */
   transition: all 0.5s ease-out;
 }
 
@@ -162,10 +158,10 @@ header .menu {
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 2vh;
-  line-height: 52px;
+  font-size: 3.5rem;
+  line-height: 5.2rem;
   text-align: center;
-  padding-top: 60px;
+  padding-top: 5rem;
   padding-bottom: 10%;
   border-bottom: 1px solid black;
 }
@@ -175,25 +171,26 @@ header .menu {
 }
 
 .img-work {
-  padding-top: 10%;
-  padding-bottom: 12px;
+  padding-top: 5rem;
+  padding-bottom: 1.2rem;
+  margin: 0;
 }
 
 .mult-post h2 {
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
 }
 
 .mult-post p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  padding-bottom: 10px;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  padding-bottom: 1rem;
 }
 
 .tech {
@@ -201,16 +198,18 @@ header .menu {
   flex-direction: row;
   align-items: center;
   list-style: none;
-  margin-right: 2%;
-  height: 100%;
-  margin-bottom: 8px;
+  margin-bottom: 1rem;
+}
+
+.tech a {
+  color: black;
 }
 
 .tech li {
   color: black;
   border: 1px solid #8993a4;
-  padding: 10px 12px;
-  margin-right: 4%;
+  padding: 1rem 1.2rem;
+  margin-right: 1rem;
 }
 
 .tech a:disabled {
@@ -225,13 +224,18 @@ header .menu {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding: 12px;
-  gap: 10px;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  font-family: 'Inter',sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  padding: 1.2rem;
+  gap: 1rem;
 }
 
 .btn-works-1:hover {
   background: #fff5e1;
-  border: 1px solid #f55800;
+  border: 0.1rem solid #f55800;
   color: #f55800;
 }
 
@@ -242,7 +246,7 @@ header .menu {
 
 .card a:hover {
   background: #fff5e1;
-  border: 1px solid #f55800;
+  border: 0.1rem solid #f55800;
   color: #f55800;
 }
 
@@ -253,7 +257,7 @@ header .menu {
 
 .introduction a:hover {
   background: #fff5e1;
-  border: 1px solid #f55800;
+  border: 0.1rem solid #f55800;
   color: #f55800;
 }
 
@@ -264,31 +268,31 @@ header .menu {
 
 .card-container {
   color: white;
-  display: flex;
-  flex-direction: column;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 30%;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;;
+  padding-bottom: 3rem;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   background-image: url(Images/Work/Work-bg-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  height: 386px;
-  width: 100%;
+  width: fit-content;
+  gap: 2rem;
 }
 
 .card h1 {
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 44px;
-  padding-left: 5%;
-  padding-top: 25%;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  padding-left: 2.3rem;
+  padding-top: 7rem;
 }
 
 .card h2 {
@@ -299,16 +303,16 @@ header .menu {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  padding-left: 5%;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding-left: 2.3rem;
   align-content: center;
 }
 
 .card-lang {
   display: flex;
-  gap: 20px;
-  padding-left: 5%;
+  gap: 1.5rem;
+  padding-left: 2.3rem;
   align-items: center;
 }
 
@@ -316,9 +320,9 @@ header .menu {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  padding: 10px 12px 10px 12px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 1rem 1.2rem 1rem 1.2rem;
   animation-name: lang-color-changes;
   animation-duration: 3s;
   background-color: rgba(255, 255, 255, 0.24);
@@ -349,12 +353,12 @@ header .menu {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.03em;
-  height: 48px;
+  letter-spacing: 0.2rem;
+  height: 4.5rem;
   background: #ff6b00;
   display: flex;
   justify-content: center;
@@ -371,10 +375,11 @@ header .menu {
   height: auto;
   left: 0;
   padding-left: 5%;
+  padding-bottom: 5rem;
 }
 
 .introduction {
-  height: 600px;
+  height: 60rem;
   background-image: url("Images/About/bg-about.png");
   background-repeat: no-repeat;
   background-position: bottom 5% right;
@@ -385,22 +390,22 @@ header .menu {
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 72px;
-  line-height: 88px;
+  font-size: 7.2rem;
+  line-height: 8.8rem;
   letter-spacing: 0.37px;
-  padding-top: 30%;
-  padding-bottom: 3%;
+  padding-top: 15rem;
+  padding-bottom: 2rem;
 }
 
 .introduction p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
   align-content: center;
-  padding-bottom: 5%;
-  padding-right: 5%;
+  padding-bottom: 2.3rem;
+  padding-right: 2.3rem;
 }
 
 .get-resume {
@@ -411,16 +416,16 @@ header .menu {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding: 12px;
-  gap: 10px;
-  margin-bottom: 150px;
+  padding: 1.2rem;
+  gap: 1rem;
+  margin-bottom: 10rem;
 }
 
 .line-dev {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-right: 5%;
+  padding-right: 2.3rem;
   padding-top: 10%;
 }
 
@@ -428,7 +433,7 @@ header .menu {
 
 .knowledge {
   text-align: center;
-  padding-top: 30%;
+  padding-top: 10rem;
 }
 
 .title-lang::before {
@@ -436,24 +441,24 @@ header .menu {
 }
 
 .title-lang {
-  font-family: "InaiMathi", serif;
+  font-family: "InaiMathi", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
   align-items: center;
-  padding-top: 12px;
-  padding-bottom: 20px;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  padding-top: 1.2rem;
+  padding-bottom: 2rem;
 }
 
 .title {
   font-family: "Inter", serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  padding-top: 12px;
-  padding-bottom: 20px;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  padding-top: 1.2rem;
+  padding-bottom: 2rem;
 }
 
 .frameworks h2::before {
@@ -468,8 +473,8 @@ header .menu {
   font-family: "Inter", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 43px;
+  font-size: 2.2rem;
+  line-height: 4.3rem;
 }
 
 /* Contact Me Section */
@@ -480,23 +485,23 @@ header .menu {
 }
 
 .art-contact {
+  color: #172B4D;
   font-family: "Inter", sans-serif;
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: 700;
-  line-height: 44px;
-  letter-spacing: 0;
+  line-height: 4.4rem;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 15% 5%;
+  margin: 4.6rem 2.3rem;
   margin-bottom: 10%;
 }
 
 form {
-  margin: 5%;
+  margin: 2.3rem;
   width: auto;
-  padding: 1em;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -507,8 +512,8 @@ form input {
   border-top: none;
   border-right: none;
   border-left: none;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #dbd8d7;
+  padding-bottom: 1rem;
+  border-bottom: 0.1rem solid #dbd8d7;
 }
 
 form input:focus {
@@ -517,9 +522,9 @@ form input:focus {
 }
 
 #textarea {
-  padding-left: 5%;
+  padding-left: 2.3rem;
   justify-content: flex-start;
-  padding-top: 10px;
+  padding-top: 1rem;
   background-color: #fbf8f7;
 }
 
@@ -530,11 +535,11 @@ form input:focus {
 
 .btn-contact {
   background-color: #ff6b00;
-  padding: 5%;
+  padding: 1.3rem;
   font-family: "Inter", sans-serif;
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 2.4rem;
   letter-spacing: 0.03em;
   text-align: center;
   width: fit-content;
@@ -581,8 +586,8 @@ form input:focus {
   justify-content: center;
   align-content: center;
   padding: 0;
-  width: 200px;
-  height: 42px;
+  width: 200rem;
+  height: 4.2rem;
   padding-top: 6%;
 }
 
@@ -615,30 +620,30 @@ form input:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 72px;
-    margin-right: 350px;
+    height: 7.2rem;
+    margin-right: 30rem;
     width: content;
   }
 
   header .logo {
-    margin-left: 130px;
+    margin-left: 13rem;
     padding-right: 50px;
   }
 
   .menu img {
-    margin-bottom: 25px;
+    margin-bottom: 2.5rem;
   }
 
   .element {
     width: fit-content;
-    height: 70px;
+    height: 7rem;
     color: #fff;
     font-family: "Inter", "Franklin Gothic Medium", "Arial Narrow", Arial,
       sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 17px;
-    line-height: 20px;
+    font-size: 1.7rem;
+    line-height: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -654,24 +659,29 @@ form input:focus {
   /* MAIN DESKTOP */
 
   .main {
-    height: 870px;
+    height: 87rem;
     flex-direction: row-reverse;
     background-image: none;
     padding-right: 0;
-    padding-left: 5%;
+    padding-left: 2.3rem;
     align-items: flex-start;
   }
 
-  .social-icon {
-    width: 40px;
-    height: auto;
-    flex-direction: column;
-    flex: 1;
-    padding-top: 0%;
-    align-self: center;
+  .hero-container{
+    flex-direction: row-reverse;
+    justify-content: start;
   }
 
-  .intro-desktop {
+  .social-icon {
+    width: 4rem;
+    height: auto;
+    flex-direction: column;
+    padding-top: 0%;
+    padding-bottom: 5rem;
+    align-self: flex-end;
+  }
+
+  /* .intro-desktop {
     display: flex;
     width: 40%;
     max-width: 566px;
@@ -679,31 +689,29 @@ form input:focus {
     padding-left: 50px;
     padding-right: 20px;
     justify-content: center;
-  }
+    flex: 1;
+  } */
 
   .main h1 {
-    max-width: 90%;
+    max-width: 40rem;
     min-width: 30%;
     height: auto;
-    font-family: "Crete Round", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 5vw;
-    line-height: 1em;
-    padding-top: 150px;
-    padding-bottom: 0.5em;
+    font-size: 8rem;
+    line-height: 8rem;
+    padding-top: 15rem;
+    padding-bottom: 1rem;
     color: #f55800;
   }
 
   .main h2 {
     width: 100%;
-    max-width: 566px;
+    max-width: 56rem;
     height: auto;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
     padding-bottom: 0.5em;
     color: #f4f5f7;
   }
@@ -745,39 +753,42 @@ form input:focus {
   .recent-w-title {
     display: flex;
     width: 100%;
-    align-items: start;
+    align-items: center;
+    padding-bottom: 5rem;
   }
 
   .recent-w-title img {
     display: flex;
-    height: 2px;
-    width: 65%;
+    height: 0.1rem;
+    width: 60%;
     align-self: center;
   }
 
   .recent-w-title h1 {
     width: 30%;
     max-width: fit-content;
-    height: 40px;
+    height: 4rem;
     justify-content: flex-start;
     text-align: start;
+    align-items: center;
     border: none;
     padding: 0;
-    margin-bottom: 3%;
+    padding-right: 3rem;
+    margin-bottom: 2rem;
     font-family: "Crete Round", system-ui, -apple-system, BlinkMacSystemFont,
       "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
       "Helvetica Neue", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 2em;
+    line-height: 5.2rem;
   }
 
   .img-work {
     width: 45%;
     min-width: 30%;
     height: auto;
-    min-height: 10%;
+    min-height: 50rem;
     padding: 0%;
   }
 
@@ -788,12 +799,6 @@ form input:focus {
     flex-direction: column;
     text-align: start;
     padding-left: 2%;
-  }
-
-  .mult-post h2 {
-    width: 100%;
-    height: auto;
-    padding-bottom: 3%;
   }
 
   .mult-post p {
@@ -875,6 +880,7 @@ form input:focus {
 
   .card-1 .btn-works {
     display: flex;
+    height: 6rem;
   }
 
   .card-1 article {
@@ -964,27 +970,24 @@ form input:focus {
 
   .about {
     width: fit-content;
-    height: 1200px;
+    height: auto;
     display: flex;
     flex-direction: column;
     background: #262626;
+    padding-bottom: 5%;
   }
 
   .about h1 {
-    font-family: "Crete Round", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 72px;
-    line-height: 82px;
+    font-size: 7.2rem;
+    line-height: 8.2rem;
     color: #f55800;
   }
 
   .introduction {
     background-image: url(Images/About/desktop-about.png);
     background-repeat: no-repeat;
-    background-position: bottom 150px right;
-    background-size: 660px 350px;
-    align-items: center;
+    background-position: bottom 10rem right;
+    background-size: 66rem 35rem;
   }
 
   .present-ab {
@@ -992,10 +995,10 @@ form input:focus {
   }
 
   .present-ab p {
-    font-size: 120%;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 3.2rem;
     padding-bottom: 8%;
   }
 
@@ -1005,9 +1008,9 @@ form input:focus {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 17px;
-    line-height: 24px;
-    margin-bottom: 140px;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    margin-bottom: 14rem;
   }
 
   .line-dev {
@@ -1020,10 +1023,10 @@ form input:focus {
     justify-content: space-between;
     width: 90%;
     height: auto;
-    column-gap: 10px;
-    padding-top: 7%;
-    margin-top: 4%;
-    border-top: 1px solid #fff;
+    column-gap: 1rem;
+    padding-top: 10rem;
+    margin-top: 4rem;
+    border-top: 0.1rem solid #fff;
   }
 
   .lang {
@@ -1039,18 +1042,14 @@ form input:focus {
   }
 
   .knowledge li {
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
   }
 
   .items {
-    width: 114px;
-    height: 24px;
     font-family: "Inter", "Franklin Gothic Medium", "Arial Narrow", Arial,
       sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 43px;
+    font-size: 2,2rem;
+    line-height: 4.3rem;
     display: flex;
     align-items: center;
     color: #fff;
@@ -1080,10 +1079,7 @@ form input:focus {
     width: 50%;
     margin: 0;
     padding-right: 20px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
+    font-size: 4rem;
     line-height: 52px;
     align-items: center;
     color: #172b4d;
@@ -1100,7 +1096,7 @@ form input:focus {
     justify-content: center;
     margin: 0;
     padding: 0%;
-    margin-bottom: 100px;
+    margin-bottom: 10rem;
     padding-left: 5px;
   }
 
@@ -1114,14 +1110,14 @@ form input:focus {
   }
 
   .btn-div {
-    padding: 20px;
-    margin-top: 20px;
+    padding: 2rem;
+    margin-top: 2rem;
     padding-left: 0;
     align-items: flex-start;
   }
 
   .btn-contact {
-    padding: 20px;
+    padding: 2rem;
   }
 
   footer {
