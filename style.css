@@ -1092,7 +1092,7 @@ form input:focus {
     flex-direction: row;
   }
 
-  .contact article {
+  .contact h1 {
     display: flex;
     justify-content: flex-start;
     width: 50%;
