@@ -13,6 +13,20 @@
   list-style: none;
 }
 
+/* Animations */
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 html {
   font-size: 62.5%;
 }
@@ -33,6 +47,12 @@ header {
   height: 4rem;
   width: 100%;
   text-decoration: none;
+}
+
+.menu a:hover {
+  color: orange;
+  transition: color ease-in .5s;
+  transform: scale(1.5);
 }
 
 header .logo {
@@ -98,6 +118,8 @@ header .menu {
   color: #ff6b00;
   margin-bottom: 0;
   padding-top: 6vh;
+  animation-duration: 1s;
+  animation-name: slidein;
 }
 
 .main h2 {
@@ -110,6 +132,8 @@ header .menu {
   line-height: 6rem;
   display: flex;
   align-items: center;
+  animation-duration: 2s;
+  animation-name: slidein;
 }
 
 .main p {
@@ -122,6 +146,8 @@ header .menu {
   flex: none;
   margin-bottom: 0;
   margin-top: 0;
+  animation-duration: 3s;
+  animation-name: slidein;
 }
 
 .hero-container {
@@ -138,11 +164,18 @@ header .menu {
   width: 20rem;
   height: 4.2rem;
   transition: all 0.5s ease-out;
+  animation-duration: .5s;
+  animation-name: slidein;
 }
 
 .social-icon:hover {
   background-color: #3e4844;
   box-shadow: 0 0 35px #f27e12;
+}
+
+.social-icon img:hover {
+  transition: color ease-in .5s;
+  transform: scale(1.5);
 }
 
 /* Recent Work section */
@@ -184,6 +217,7 @@ header .menu {
   font-size: 3.2rem;
   line-height: 4.4rem;
 }
+
 
 .mult-post p {
   font-family: "Inter", sans-serif;
@@ -682,7 +716,7 @@ form input:focus {
     height: auto;
     flex-direction: column;
     padding-top: 0%;
-    padding-bottom: 5rem;
+    
     align-self: flex-end;
   }
 
@@ -1144,4 +1178,10 @@ form input:focus {
     justify-content: center;
     border-top: black 1px solid;
   }
+
+  .social-ic-2 img:hover {
+    transition: color ease-in .5s;
+    transform: scale(1.5);
+  }
+
 }
