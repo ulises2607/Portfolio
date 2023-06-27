@@ -162,7 +162,6 @@ header .logo {
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
-  font-weight: 4rem;
   font-size: 5.6rem;
   line-height: 6.4rem;
   letter-spacing: 0.037rem;
@@ -711,7 +710,6 @@ form input:focus {
     align-items: center;
     height: 7.2rem;
     margin-right: 10rem;
-    width: content;
     gap: 2rem;
   }
 
@@ -831,7 +829,6 @@ form input:focus {
   .recent-works {
     position: relative;
     width: 100%;
-    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -857,7 +854,6 @@ form input:focus {
 
   .recent-w-title h2 {
     width: 30%;
-    max-width: fit-content;
     height: 4rem;
     justify-content: flex-start;
     text-align: start;
@@ -916,14 +912,12 @@ form input:focus {
   }
 
   .tech {
-    justify-content: none;
     height: auto;
     padding-top: 4%;
     padding-bottom: 4%;
   }
 
   .tech-btn a {
-    justify-content: none;
     width: 43px;
     height: 20px;
     font-family: Inter, sans-serif;
@@ -951,7 +945,6 @@ form input:focus {
 
   .card {
     width: 100%;
-    min-width: none;
     height: auto;
     min-height: 500px;
   }
@@ -1152,7 +1145,7 @@ form input:focus {
       "Arial Narrow",
       Arial,
       sans-serif;
-    font-size: 2, 2rem;
+    font-size: 2.2rem;
     line-height: 4.3rem;
     display: flex;
     align-items: center;
