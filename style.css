@@ -18,7 +18,7 @@
 @keyframes slidein {
   from {
     margin-left: 100%;
-    width: 300%
+    width: 300%;
   }
 
   to {
@@ -26,7 +26,6 @@
     width: 100%;
   }
 }
-
 
 html {
   font-size: 62.5%;
@@ -58,7 +57,7 @@ header {
 @media screen and (width <= 768px){
   .hamb-icon,
   .close {
-      display: block;
+    display: block;
   }
 
   .menu {
@@ -91,7 +90,7 @@ header {
   }
 
   .menu-desktop li a {
-    color: #FFF5E1;
+    color: #fff5e1;
     font-weight: 700;
     font-size: 3rem;
   }
@@ -111,7 +110,7 @@ header {
 
 .menu a:hover {
   color: orange;
-  transition: color ease-in .5s;
+  transition: color ease-in 0.5s;
   transform: scale(1.5);
 }
 
@@ -216,7 +215,7 @@ header .logo {
   width: 20rem;
   height: 4.2rem;
   transition: all 0.5s ease-out;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-name: slidein;
 }
 
@@ -226,7 +225,7 @@ header .logo {
 }
 
 .social-icon img:hover {
-  transition: color ease-in .5s;
+  transition: color ease-in 0.5s;
   transform: scale(1.5);
 }
 
@@ -269,7 +268,6 @@ header .logo {
   font-size: 3.2rem;
   line-height: 4.4rem;
 }
-
 
 .mult-post p {
   font-family: Inter, sans-serif;
@@ -1233,8 +1231,7 @@ form input:focus {
   }
 
   .social-ic-2 img:hover {
-    transition: color ease-in .5s;
+    transition: color ease-in 0.5s;
     transform: scale(1.5);
   }
-
 }
