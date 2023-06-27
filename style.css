@@ -54,6 +54,10 @@ header {
   display: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media screen and (width <= 768px) {
   .hamb-icon,
   .close {
