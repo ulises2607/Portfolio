@@ -18,7 +18,7 @@
 @keyframes slidein {
   from {
     margin-left: 100%;
-    width: 300%
+    width: 300%;
   }
 
   to {
@@ -47,16 +47,80 @@ header {
   height: 4rem;
   width: 100%;
   text-decoration: none;
+  align-items: center;
+}
+
+.menu {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (width <= 768px) {
+  .hamb-icon,
+  .close {
+    display: block;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    min-width: 10rem;
+    gap: 4rem;
+    inset: 0 0 0 -20%;
+    background-color: #3c3a39;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax #3c3a39;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .menu.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu-desktop li {
+    min-width: 80vw;
+    flex-direction: column;
+    align-items: end;
+    padding-bottom: 1rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1.5px grey solid;
+    margin-left: 10%;
+  }
+
+  .menu-desktop li a {
+    color: #fff5e1;
+    font-weight: 700;
+    font-size: 3rem;
+  }
+
+  .close {
+    background-color: transparent;
+    color: grey;
+    font-size: 3rem;
+    cursor: pointer;
+    padding-left: 80%;
+  }
+
+  .img-item {
+    display: none;
+  }
 }
 
 .menu a:hover {
   color: orange;
-  transition: color ease-in .5s;
+  transition: color ease-in 0.5s;
   transform: scale(1.5);
 }
 
 header .logo {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1.8rem;
@@ -65,25 +129,17 @@ header .logo {
   display: flex;
   align-items: center;
   text-align: center;
-  padding-top: 1.5rem;
-  padding-left: 1vh;
+  padding-left: 2.3rem;
 }
 
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-.menu-desktop {
-  display: none;
-}
-
-header .menu {
-  padding-right: 2vw;
-  padding-top: 1.3rem;
+.hamb-icon {
+  background-color: transparent;
+  color: #fff;
+  font-size: 2.5rem;
+  position: absolute;
+  right: 0;
+  padding-right: 2.3rem;
+  cursor: pointer;
 }
 
 /* MAIN */
@@ -111,7 +167,6 @@ header .menu {
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
-  font-weight: 4rem;
   font-size: 5.6rem;
   line-height: 6.4rem;
   letter-spacing: 0.037rem;
@@ -123,7 +178,7 @@ header .menu {
 }
 
 .main h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
 
@@ -138,7 +193,7 @@ header .menu {
 
 .main p {
   display: block;
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
@@ -164,7 +219,7 @@ header .menu {
   width: 20rem;
   height: 4.2rem;
   transition: all 0.5s ease-out;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-name: slidein;
 }
 
@@ -174,7 +229,7 @@ header .menu {
 }
 
 .social-icon img:hover {
-  transition: color ease-in .5s;
+  transition: color ease-in 0.5s;
   transform: scale(1.5);
 }
 
@@ -200,7 +255,7 @@ header .menu {
   border-bottom: 1px solid black;
 }
 
-.recent-w-title img {
+.img-vector {
   display: none;
 }
 
@@ -218,9 +273,8 @@ header .menu {
   line-height: 4.4rem;
 }
 
-
 .mult-post p {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.7rem;
@@ -236,7 +290,7 @@ header .menu {
   margin-bottom: 1rem;
 }
 
-.tech a {
+.a-tech {
   color: black;
 }
 
@@ -261,7 +315,7 @@ header .menu {
   align-items: center;
   font-size: 1.7rem;
   line-height: 2.4rem;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 700;
   padding: 1.2rem;
@@ -312,7 +366,7 @@ header .menu {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url(Images/Work/Work-bg-1.png);
+  background-image: url("Images/Work/Work-bg-1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -335,7 +389,7 @@ header .menu {
 }
 
 .card-description {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
@@ -352,15 +406,15 @@ header .menu {
 }
 
 .card-lang li {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 2rem;
-  padding: 1rem 1.2rem 1rem 1.2rem;
+  padding: 1rem 1.2rem;
   animation-name: lang-color-changes;
   animation-duration: 3s;
-  background-color: rgba(255, 255, 255, 0.24);
+  background-color: rgb(255 255 255 / 24%);
 }
 
 @keyframes lang-color-changes {
@@ -385,7 +439,7 @@ header .menu {
 
 .btn-works {
   color: white;
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1.7rem;
@@ -433,7 +487,7 @@ header .menu {
 }
 
 .introduction p {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
@@ -472,11 +526,11 @@ header .menu {
 }
 
 .title-lang::before {
-  content: url(Images/rhombus.svg);
+  content: url("Images/rhombus.svg");
 }
 
 .title-lang {
-  font-family: "InaiMathi", sans-serif;
+  font-family: InaiMathi, sans-serif;
   font-style: normal;
   font-weight: 700;
   align-items: center;
@@ -487,7 +541,7 @@ header .menu {
 }
 
 .title {
-  font-family: "Inter", serif;
+  font-family: Inter, serif;
   font-style: normal;
   font-weight: 700;
   font-size: 3.2rem;
@@ -497,15 +551,15 @@ header .menu {
 }
 
 .frameworks h3::before {
-  content: url(Images/Rectangle\ 56.svg);
+  content: url("Images/Rectangle\ 56.svg");
 }
 
 .skills h3::before {
-  content: url(Images/Circle.svg);
+  content: url("Images/Circle.svg");
 }
 
 #items li {
-  font-family: "Inter", serif;
+  font-family: Inter, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2.2rem;
@@ -521,14 +575,13 @@ header .menu {
 
 .art-contact {
   color: #172b4d;
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 3.2rem;
   font-weight: 700;
   line-height: 4.4rem;
   text-align: center;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-flow: column wrap;
   margin: 4.6rem 2.3rem;
   margin-bottom: 10%;
 }
@@ -571,7 +624,7 @@ form input:focus {
 .btn-contact {
   background-color: #ff6b00;
   padding: 1.3rem;
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 1.7rem;
   font-weight: 700;
   line-height: 2.4rem;
@@ -585,8 +638,7 @@ form input:focus {
 
 .btn-div {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   margin-top: 10%;
@@ -633,7 +685,7 @@ form input:focus {
   padding-bottom: 3%;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   body {
     width: 100%;
     display: flex;
@@ -649,6 +701,12 @@ form input:focus {
   header {
     height: 72px;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
   }
 
   .menu-desktop {
@@ -656,8 +714,12 @@ form input:focus {
     justify-content: space-between;
     align-items: center;
     height: 7.2rem;
-    margin-right: 30rem;
-    width: content;
+    margin-right: 10rem;
+    gap: 2rem;
+  }
+
+  .close {
+    display: none;
   }
 
   header .logo {
@@ -665,16 +727,11 @@ form input:focus {
     padding-right: 50px;
   }
 
-  .menu img {
-    margin-bottom: 2.5rem;
-  }
-
   .element {
-    width: fit-content;
     height: 7rem;
     color: #fff;
     font-family:
-      "Inter",
+      Inter,
       "Franklin Gothic Medium",
       "Arial Narrow",
       Arial,
@@ -687,8 +744,7 @@ form input:focus {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-right: 20%;
-    margin-bottom: 11.5%;
+    margin-left: 2rem;
   }
 
   .element:link {
@@ -716,7 +772,6 @@ form input:focus {
     height: auto;
     flex-direction: column;
     padding-top: 0%;
-    
     align-self: flex-end;
   }
 
@@ -746,7 +801,7 @@ form input:focus {
     width: 100%;
     max-width: 56rem;
     height: auto;
-    font-family: "Inter", sans-serif;
+    font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 3.2rem;
@@ -758,7 +813,7 @@ form input:focus {
   .main p {
     width: 100%;
     height: 123px;
-    font-family: "Inter", sans-serif;
+    font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -779,7 +834,6 @@ form input:focus {
   .recent-works {
     position: relative;
     width: 100%;
-    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -805,7 +859,6 @@ form input:focus {
 
   .recent-w-title h2 {
     width: 30%;
-    max-width: fit-content;
     height: 4rem;
     justify-content: flex-start;
     text-align: start;
@@ -854,7 +907,7 @@ form input:focus {
     width: 100%;
     max-width: 448px;
     height: auto;
-    font-family: "Inter", sans-serif;
+    font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -864,17 +917,15 @@ form input:focus {
   }
 
   .tech {
-    justify-content: none;
     height: auto;
     padding-top: 4%;
     padding-bottom: 4%;
   }
 
   .tech-btn a {
-    justify-content: none;
     width: 43px;
     height: 20px;
-    font-family: "Inter", sans-serif;
+    font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -899,9 +950,7 @@ form input:focus {
 
   .card {
     width: 100%;
-    min-width: none;
     height: auto;
-    min-height: 150px;
     min-height: 500px;
   }
 
@@ -924,7 +973,7 @@ form input:focus {
   }
 
   .card-1 {
-    background-image: url(Images/Work/Desktop/c1.png);
+    background-image: url("Images/Work/Desktop/c1.png");
   }
 
   .card-1 .btn-works {
@@ -942,7 +991,7 @@ form input:focus {
 
   .card-2,
   .card-5 {
-    background-image: url(Images/Work/Desktop/Healthcare-bk.png);
+    background-image: url("Images/Work/Desktop/Healthcare-bk.png");
     background-repeat: no-repeat;
     justify-content: end;
     padding: 5%;
@@ -974,7 +1023,7 @@ form input:focus {
 
   .card-3,
   .card-6 {
-    background-image: url(Images/Work/Desktop/WebPortfolio-bg.png);
+    background-image: url("Images/Work/Desktop/WebPortfolio-bg.png");
     justify-content: end;
     padding: 5%;
   }
@@ -1033,7 +1082,7 @@ form input:focus {
   }
 
   .introduction {
-    background-image: url(Images/About/desktop-about.png);
+    background-image: url("Images/About/desktop-about.png");
     background-repeat: no-repeat;
     background-position: bottom 10rem right;
     background-size: 66rem 35rem;
@@ -1054,7 +1103,7 @@ form input:focus {
   .get-resume {
     width: fit-content;
     height: auto;
-    font-family: "Inter", sans-serif;
+    font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 1.7rem;
@@ -1096,12 +1145,12 @@ form input:focus {
 
   .items {
     font-family:
-      "Inter",
+      Inter,
       "Franklin Gothic Medium",
       "Arial Narrow",
       Arial,
       sans-serif;
-    font-size: 2, 2rem;
+    font-size: 2.2rem;
     line-height: 4.3rem;
     display: flex;
     align-items: center;
@@ -1180,8 +1229,7 @@ form input:focus {
   }
 
   .social-ic-2 img:hover {
-    transition: color ease-in .5s;
+    transition: color ease-in 0.5s;
     transform: scale(1.5);
   }
-
 }
