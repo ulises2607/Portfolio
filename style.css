@@ -54,7 +54,7 @@ header {
   display: none;
 }
 
-@media screen and (width <= 768px){
+@media screen and (width <= 768px) {
   .hamb-icon,
   .close {
     display: block;
