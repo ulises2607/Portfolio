@@ -127,7 +127,7 @@ const X = document.querySelector('.close-modal-btn');
 const page = document.querySelector('.page');
 
 document.querySelectorAll('.seeProject').forEach((n) => n.addEventListener('click', () => {
-  detailSection.style.display = 'block';
+  detailSection.style.display = 'flex';
   page.style.filter = 'blur(10px)';
 }));
 
