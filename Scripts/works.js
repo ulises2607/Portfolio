@@ -67,6 +67,8 @@ const projects = [
   },
 ];
 
+console.log(projects);
+
 // Code to generate the projects dinamicaly
 
 // function generateProjects() {
