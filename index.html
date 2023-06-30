@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css" />
-    <title>Ulises Cappa's Software Developer Portfolio</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css" />
+  <title>Ulises Cappa's Software Developer Portfolio</title>
+</head>
+
+<body>
+  <div class="page">
     <header>
       <a href="#" class="logo"> My Logo </a>
 
@@ -19,27 +22,24 @@
       <nav class="menu">
         <button class="close"><i class="bi bi-x-lg"></i></button>
         <ul class="menu-desktop">
-          <li ><a class="element" href="#work">Portfolio</a></li>
+          <li><a class="element" href="#work">Portfolio</a></li>
           <li><a class="element" href="#about">About</a></li>
           <li><a class="element" href="#contact">Contact</a></li>
-          <li class="img-item" ><a class="element" href=""><img src="Images/Main/Msg-Icon.png" alt="sign up for my newsleter" /></a></li>
+          <li class="img-item"><a class="element" href=""><img src="Images/Main/Msg-Icon.png"
+                alt="sign up for my newsleter" /></a></li>
         </ul>
       </nav>
     </header>
 
     <section class="main">
-      <img
-        class="bg-main-desk"
-        src="Images/Main/Illustration-header.png"
-        alt=" "
-      />
+      <img class="bg-main-desk" src="Images/Main/Illustration-header.png" alt=" " />
       <div class="hero-container">
         <div class="intro-desktop">
           <h1 class="title-name">Hey There. I'm Ulises.</h1>
 
           <h2 class="title-about">I'm a Software Developer</h2>
 
-          <p class="presentation">
+          <p class="presentation ">
             I can help you build a product , feature or website Look through
             some of my work and experience! If you like what you see and have a
             project you need coded, don’t hesitate to contact me.
@@ -53,14 +53,8 @@
             </a>
           </li>
           <li>
-            <a
-              href="https://www.linkedin.com/in/cesar-ulises-cappa-subelza/"
-              class="soc-icon"
-            >
-              <img
-                src="Images/Main/Social/Linkedin.svg"
-                alt="linkedin-profile"
-              />
+            <a href="https://www.linkedin.com/in/cesar-ulises-cappa-subelza/" class="soc-icon">
+              <img src="Images/Main/Social/Linkedin.svg" alt="linkedin-profile" />
             </a>
           </li>
           <li>
@@ -81,14 +75,18 @@
         </ul>
       </div>
     </section>
+
+
+
     <!-- Recent Work -->
     <section class="recent-works" id="work">
       <div class="recent-w-title">
-        <h2>My Recent Works</h2>
+        <h2 class="seeProject">My Recent Works</h2>
 
         <img class="img-vector" src="Images/Work/Desktop/Vector.png" alt=" " />
       </div>
 
+      
       <div class="container">
         <img
           class="img-work"
@@ -112,7 +110,7 @@
             <li class="tech-btn"><a class="a-tech" href="#">Ruby</a></li>
           </ul>
 
-          <a href="#" class="btn-works-1">See Projects</a>
+          <a href="#" class="btn-works-1 seeProject">See Projects</a>
         </div>
       </div>
     </section>
@@ -130,7 +128,7 @@
           <li>CSS</li>
           <li>Ruby</li>
         </ul>
-        <a href="#" class="btn-works">See Project</a>
+        <a href="#" class="btn-works seeProject">See Project</a>
       </div>
       <div class="card card-2">
         <h4 class="card-title">Profesional Art Printing Data</h4>
@@ -144,7 +142,7 @@
           <li>CSS</li>
           <li>JavaScript</li>
         </ul>
-        <a href="#" class="btn-works">See Project</a>
+        <a href="#" class="btn-works seeProject">See Project</a>
       </div>
       <div class="card card-3">
         <h4 class="card-title">Profesional Art Printing Data</h4>
@@ -158,7 +156,7 @@
           <li>CSS</li>
           <li>JavaScript</li>
         </ul>
-        <a href="#" class="btn-works">See Project</a>
+        <a href="#" class="btn-works seeProject">See Project</a>
       </div>
       <div class="card card-4">
         <h4 class="card-title">Profesional Art Printing Data</h4>
@@ -171,7 +169,7 @@
           <li>CSS</li>
           <li>JavaScript</li>
         </ul>
-        <a href="#" class="btn-works">See Project</a>
+        <a href="#" class="btn-works seeProject">See Project</a>
       </div>
       <div class="card card-5">
         <h4 class="card-title">Profesional Art Printing Data</h4>
@@ -185,7 +183,7 @@
           <li>CSS</li>
           <li>JavaScript</li>
         </ul>
-        <a href="#" class="btn-works">See Project</a>
+        <a href="#" class="btn-works seeProject">See Project</a>
       </div>
       <div class="card card-6">
         <h4 class="card-title">Profesional Art Printing Data</h4>
@@ -199,7 +197,7 @@
           <li>CSS</li>
           <li>JavaScript</li>
         </ul>
-        <a href="#" class="btn-works">See Project</a>
+        <a href="#" class="btn-works seeProject">See Project</a>
       </div>
     </section>
 
@@ -269,35 +267,13 @@
 
           <form action="https://formspree.io/f/mgebgoge" method="POST">
             <label for="full_name"></label>
-            <input
-              type="text"
-              id="user_name"
-              name="full_name"
-              placeholder="Full Name"
-              maxlength="30"
-              required
-            />
+            <input type="text" id="user_name" name="full_name" placeholder="Full Name" maxlength="30" required />
 
             <label for="email"></label>
-            <input
-              type="email"
-              id="user_email"
-              name="email"
-              maxlength="30"
-              placeholder="Email address"
-              required
-            />
+            <input type="email" id="user_email" name="email" maxlength="30" placeholder="Email address" required />
             <label for="message"></label>
-            <textarea
-              name="message"
-              id="textarea"
-              cols="30"
-              rows="10"
-              placeholder="Write me something..."
-              maxlength="500"
-              name="message"
-              required
-            ></textarea>
+            <textarea name="message" id="textarea" cols="30" rows="10" placeholder="Write me something..."
+              maxlength="500" name="message" required></textarea>
 
             <div class="btn-div">
               <button class="btn-contact" type="submit">Get in touch</button>
@@ -320,10 +296,7 @@
             </a>
           </li>
           <li>
-            <a
-              href="https://www.linkedin.com/in/cesar-ulises-cappa-subelza/"
-              class="soc-icon"
-            >
+            <a href="https://www.linkedin.com/in/cesar-ulises-cappa-subelza/" class="soc-icon">
               <img src="Images/Contact/Linkedin.png" alt="linkedin-profile" />
             </a>
           </li>
@@ -349,6 +322,56 @@
         <img src="Images/Contact/Shape.png" alt=" " />
       </div>
     </footer>
-    <script src="main.js"></script>
-  </body>
+  </div>
+  <!-- Modals -->
+  <dialog id="details" class="detailSection">
+    <div class="details ">
+      <div class="modal-heading">
+        <div class="title-modal">
+          <h2 class="titl-mod-mob" >Multi Post Stories</h2>
+          <h2 class="tit-mod-desk">Keeping track of hundreds of components website</h2>
+          <buttton class="close-modal-btn">
+            <i class="bi bi-x-lg"></i>
+          </buttton>
+        </div>
+        <ul class="modals-tech">
+          <li>HTML</li>
+          <li>Bootstrap</li>
+          <li>Ruby on Rails</li>
+        </ul>
+      </div>
+      <div class="body-modal">
+        <img class="img-modal" src="./Images/Work/Snapshoot Portfolio (1).png" alt="">
+        <div class="descrip-modal">
+          <div class="p-descript">
+            <article>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essent
+            </article>
+            <article class="art-dk">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essent
+            </article>
+          </div>
+          <div class="descript-btn">
+            <button>
+              <a class="modal-btn" href="#">See Live</a><img class="modal-btn" src="./Images/Icon - Export.svg" alt="Export">
+            </button>
+            <button>
+              <a class="modal-btn" href="https://github.com/ulises2607/Portfolio">See Source</a> <img class="modal-btn" src="./Images/Work/Frame.png"
+                alt="Frame">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+  <script src="Scripts/main.js"></script>
+  <script src="Scripts/works.js"></script>
+</body>
+
 </html>

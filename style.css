@@ -233,6 +233,124 @@ header .logo {
   transform: scale(1.5);
 }
 
+/* Modals */
+
+.detailSection {
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  gap: 1.5rem;
+  top: 5%;
+  width: 85%;
+  margin-left: 5%;
+  overflow-y: scroll;
+  padding: 1.5rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  align-items: normal;
+  width: 100%;
+  justify-content: flex-start;
+  padding-top: 1rem;
+}
+
+.modal-heading {
+  width: 95%;
+}
+
+.title-modal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tit-mod-desk {
+  display: none;
+}
+
+.title-modal h2 {
+  font-size: 2.5rem;
+  color: #172b4d;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  line-height: 2.75rem;
+}
+
+.close-modal-btn {
+  font-size: 2.2rem;
+}
+
+.modals-tech {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+  margin: 12% 0 0% 0;
+}
+
+.modals-tech li {
+  padding: 1rem;
+  border: 1px solid #979493;
+  color: #3c3a39;
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.body-modal {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-modal {
+  margin: 25px 0;
+}
+
+.art-dk {
+  display: none;
+}
+
+.descrip-modal article {
+  font-size: 1rem;
+  color: #344563;
+  font-weight: 400;
+  line-height: 1.5rem;
+  font-family: "Inter", sans-serif;
+}
+
+.descript-btn {
+  gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 4rem;
+  margin-top: 25px;
+}
+
+.descript-btn button {
+  display: flex;
+  width: 23rem;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff6b00;
+}
+
+.modal-btn {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.03188rem;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
 /* Recent Work section */
 
 .recent-works {
@@ -775,17 +893,6 @@ form input:focus {
     align-self: flex-end;
   }
 
-  /* .intro-desktop {
-    display: flex;
-    width: 40%;
-    max-width: 566px;
-    flex-direction: column;
-    padding-left: 50px;
-    padding-right: 20px;
-    justify-content: center;
-    flex: 1;
-  } */
-
   .main h1 {
     max-width: 40rem;
     min-width: 30%;
@@ -827,6 +934,84 @@ form input:focus {
     max-width: 1100px;
     height: 750px;
     padding-left: 10%;
+  }
+
+  /* Modal */
+
+  .details {
+    margin-left: 5rem;
+    bottom: 5%;
+  }
+
+  .modal-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-bottom: 2rem;
+  }
+
+  .title-modal {
+    justify-content: space-between;
+  }
+
+  .tit-mod-desk {
+    display: block;
+  }
+
+  .titl-mod-mob {
+    display: none;
+  }
+
+  .modals-tech {
+    margin: 0;
+    margin-top: 1rem;
+  }
+
+  .body-modal {
+    margin-top: 1rem;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .img-modal {
+    margin-top: 0;
+    width: 50%;
+  }
+
+  .descrip-modal {
+    width: 43%;
+    margin: 1rem;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .descrip-modal article {
+    color: var(--neutrals-n-600, #344563);
+    font-size: 1.2rem;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+
+  .art-dk {
+    display: block;
+    padding-top: 2rem;
+  }
+
+  .descript-btn {
+    display: flex;
+    justify-content: flex-start;
+    height: 4rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .descript-btn button {
+    width: auto;
+    padding: 1rem;
   }
 
   /* Recent Work Section */
@@ -966,10 +1151,6 @@ form input:focus {
 
   .card-lang {
     padding-left: 0%;
-  }
-
-  .btn-works {
-    display: none;
   }
 
   .card-1 {
