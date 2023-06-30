@@ -238,30 +238,27 @@ header .logo {
 .detailSection {
   position: fixed;
   display: none;
-  justify-content: center;
-  top: 10%;
-  width: 90%;
-  margin-right: 3rem;
-  margin-left: 3rem;
+  flex-direction: column;
+  gap: 1.5rem;
+  top: 5%;
+  width: 85%;
+  margin-left: 5%;
   overflow-y: scroll;
-  padding-right: 1rem;
-  padding-left: 1.5rem;
-  padding-bottom: 3rem;
+  padding: 1.5rem;
 }
 
 .details {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  align-items: center;
+  align-items: normal;
   width: 100%;
-  justify-content: center;
-  padding-bottom: 3rem;
-  padding-top: 3rem;
+  justify-content: flex-start;
+  padding-top: 1rem;
 }
 
 .modal-heading {
-  width: 100%;
+  width: 95%;
 }
 
 .title-modal {
@@ -275,28 +272,34 @@ header .logo {
 }
 
 .title-modal h2 {
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   color: #172b4d;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
-  line-height: 44px;
+  line-height: 2.75rem;
+}
+
+.close-modal-btn {
+  font-size: 2.2rem;
 }
 
 .modals-tech {
   display: flex;
   list-style: none;
   gap: 8px;
-  margin: 12% 0 5% 0;
+  margin: 12% 0 0% 0;
 }
 
 .modals-tech li {
-  padding: 10px 15px;
+  padding: 1rem;
   border: 1px solid #979493;
   color: #3c3a39;
-  font-size: 16px;
+  font-size: 0.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  line-height: 16px;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .body-modal {
@@ -313,10 +316,10 @@ header .logo {
 }
 
 .descrip-modal article {
-  font-size: 19px;
+  font-size: 1rem;
   color: #344563;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5rem;
   font-family: "Inter", sans-serif;
 }
 
@@ -325,7 +328,7 @@ header .logo {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 6rem;
+  height: 4rem;
   margin-top: 25px;
 }
 
@@ -333,7 +336,6 @@ header .logo {
   display: flex;
   width: 23rem;
   gap: 12px;
-  padding: 12px;
   align-items: center;
   justify-content: center;
   background-color: #ff6b00;
@@ -341,11 +343,12 @@ header .logo {
 
 .modal-btn {
   color: #fff;
-  font-size: 2.8rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.5rem;
   letter-spacing: 0.03188rem;
   text-align: center;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Recent Work section */
@@ -934,16 +937,10 @@ form input:focus {
   }
 
   /* Modal */
-  .detailSection {
-    top: 10%;
-    left: 5%;
-    right: 5%;
-    width: 90%;
-    align-items: start;
-  }
 
   .details {
     margin-left: 5rem;
+    bottom: 5%;
   }
 
   .modal-heading {
@@ -965,19 +962,15 @@ form input:focus {
     display: none;
   }
 
-  .close-modal-btn {
-    padding-right: 20rem;
-  }
-
   .modals-tech {
     margin: 0;
     margin-top: 1rem;
   }
 
   .body-modal {
-    margin-top: 2rem;
+    margin-top: 1rem;
     flex-direction: row;
-    align-items: start;
+    align-items: stretch;
   }
 
   .img-modal {
@@ -986,18 +979,21 @@ form input:focus {
   }
 
   .descrip-modal {
-    width: 40%;
+    width: 43%;
     margin: 1rem;
     padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .descrip-modal article {
     color: var(--neutrals-n-600, #344563);
-    font-size: 2.6rem;
+    font-size: 1.2rem;
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: 400;
-    line-height: 3rem;
+    line-height: 2rem;
   }
 
   .art-dk {
@@ -1006,8 +1002,18 @@ form input:focus {
   }
 
   .descript-btn {
-    justify-content: start;
+    display: flex;
+    justify-content: flex-start;
+    height: 4rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
   }
+
+  .descript-btn button {
+    width: auto;
+    padding: 1rem;
+  }
+
 
   /* Recent Work Section */
 
