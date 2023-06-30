@@ -239,11 +239,14 @@ header .logo {
   position: fixed;
   display: none;
   justify-content: center;
-  top: 6%;
-  width: 90vw;
-  margin-right: 2rem;
-  margin-left: 1rem;
+  top: 10%;
+  width: 90%;
+  margin-right: 3rem;
+  margin-left: 3rem;
   overflow-y: scroll;
+  padding-right: 1rem;
+  padding-left: 1.5rem;
+  padding-bottom: 3rem;
 }
 
 .details {
@@ -252,13 +255,9 @@ header .logo {
   background-color: #fff;
   align-items: center;
   width: 100%;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  padding-right: 2rem;
-  padding-left: 1rem;
-  padding-top: 3rem;
   justify-content: center;
   padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 
 .modal-heading {
@@ -276,7 +275,7 @@ header .logo {
 }
 
 .title-modal h2 {
-  font-size: 4rem;
+  font-size: 4.5rem;
   color: #172b4d;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
@@ -322,24 +321,27 @@ header .logo {
 }
 
 .descript-btn {
-  gap: 15px;
+  gap: 1rem;
   display: flex;
   justify-content: space-between;
-  height: 50px;
+  width: 100%;
+  height: 6rem;
   margin-top: 25px;
 }
 
 .descript-btn button {
   display: flex;
+  width: 23rem;
   gap: 12px;
   padding: 12px;
   align-items: center;
+  justify-content: center;
   background-color: #ff6b00;
 }
 
 .modal-btn {
   color: #fff;
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: 700;
   line-height: 1.5rem;
   letter-spacing: 0.03188rem;
