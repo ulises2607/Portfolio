@@ -122,6 +122,7 @@ console.log(projects);
 // }
 // window.addEventListener('load', generateProjects());
 
+ // POPUP SECTION
 const detailSection = document.querySelector('.detailSection');
 const X = document.querySelector('.close-modal-btn');
 const page = document.querySelector('.page');
@@ -145,4 +146,13 @@ function disappearPage(event) {
 }
 detailSection.addEventListener('click', disappearPage);
 
-// window.addEventListener('load', generateProjects());
+
+//              EMAIL VALIDATION
+
+const form = document.querySelector('.c-form');
+const email = document.querySelector('#user_email');
+const errorMessage = document.createElement('span');
+errorMessage.innerHTML = '* Your email should be in lower case';
+errorMessage.classList.add('errorMessage');
+
+
