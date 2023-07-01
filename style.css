@@ -805,7 +805,7 @@ form input:focus {
 
 .errorMessage {
   color: red;
-  font-family: Arial, Helvetica, sans-serif, Geneva, Tahoma, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   margin-top: 3rem;
 }
