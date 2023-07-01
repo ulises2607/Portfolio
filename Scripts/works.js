@@ -69,59 +69,6 @@ const projects = [
 
 console.log(projects);
 
-// Code to generate the projects dinamicaly
-
-// function generateProjects() {
-//   let techListMP = '';
-
-//   projects[0].technology.forEach((tech) => {
-//     techListMP += `<li class="tech-btn"><a class="a-tech" href="#">${tech}</a></li>`;
-//   });
-
-//   divMultPost.innerHTML = `<img
-//   class="img-work"
-//   src="${projects[0].image}"
-//   alt="Multi-post-stories"
-//   />
-
-//   <div class="mult-post">
-//   <h3>${projects[0].name}</h3>
-
-//   <p>${projects[0].description}</p>
-
-//   <ul class="tech">
-//     ${techListMP}
-//   </ul>
-//   <a href="" class="btn-works-1 seeProject">See Projects</a>
-//   </div>`;
-
-//   const divCards = document.createElement('div');
-//   divCards.classList.add('card-container');
-//   works.appendChild(divCards);
-
-//   let techLang = '';
-
-//   for (let e = 1; e < projects.length; e++) {
-//     techLang = '';
-//     projects[e].technology.forEach((tech) => {
-//       techLang += `<li>${tech}</li>`;
-//     });
-//     divCards.innerHTML += `
-//     <div class="card card-${projects[e].id}">
-//         <h4 class="card-title">${projects[e].name}</h4>
-//         <article class="card-description">
-//           ${projects[e].description}
-//         </article>
-//         <ul class="card-lang">
-//             ${techLang}
-//         </ul>
-//         <a href="#" class="btn-works seeProject">See Project</a>
-//       </div>
-//     `;
-//   }
-// }
-// window.addEventListener('load', generateProjects());
-
 // POPUP SECTION
 const detailSection = document.querySelector('.detailSection');
 const X = document.querySelector('.close-modal-btn');
