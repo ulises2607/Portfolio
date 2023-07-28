@@ -35,6 +35,8 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 1.6rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 /* HEADER */
@@ -281,6 +283,7 @@ header .logo {
 
 .close-modal-btn {
   font-size: 2.2rem;
+  cursor: pointer;
 }
 
 .modals-tech {
