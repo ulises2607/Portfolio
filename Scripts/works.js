@@ -8,12 +8,10 @@ works.appendChild(divMultPost);
 const projects = [
   {
     id: 0,
-    name: 'Multi-Post Stories',
-    description: `A daily selection of privately personalized reads; no accounts or
-    sign-ups required. has been the industry's standard dummy text ever
-    since the 1500s, when an unknown printer took a standard dummy text.`,
-    image: 'Images/Work/Work-img-1.png',
-    technology: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
+    name: 'Cafayate Tourism',
+    description: `Welcome to our captivating project: "Discover Cafayate!" We've created an exciting web platform showcasing the enchanting city of Cafayate, Salta. Immerse yourself in its vibrant events, rich culture, and breathtaking landscapes. As a software developer, you'll have the opportunity to contribute to this unique project, enhancing user experiences, optimizing functionalities, and unleashing your creativity. Join us and be part of an innovative team dedicated to bringing this magical destination closer to the world through cutting-edge technology. Let's code the future of tourism together!`,
+    image: 'Images/Caf-present.png',
+    technology: ['CSS', 'HTML', , 'JavaScript'],
     source: '',
     live: '',
   },
@@ -96,8 +94,7 @@ let createCards = () => {
       <ul class="tech">
         <li class="tech-btn"><a class="a-tech" href="#">CSS</a></li>
         <li class="tech-btn"><a class="a-tech" href="#">HTML</a></li>
-        <li class="tech-btn"><a class="a-tech" href="#">Bootstrap</a></li>
-        <li class="tech-btn"><a class="a-tech" href="#">Ruby</a></li>
+        <li class="tech-btn"><a class="a-tech" href="#">JavaScript</a></li>
       </ul>
 
       <a href="#" id=${element.id} class="btn-works-1 seeProject">See Projects</a>
@@ -161,17 +158,9 @@ function createModal() {
         <div class="descrip-modal">
           <div class="p-descript">
             <article>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essent
+              ${projSelect.description}
             </article>
-            <article class="art-dk">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essent
-            </article>
+            
           </div>
           <div class="descript-btn">
             <button>
