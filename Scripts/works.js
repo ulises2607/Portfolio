@@ -12,8 +12,8 @@ const projects = [
     description: `Welcome to our captivating project: "Discover Cafayate!" We've created an exciting web platform showcasing the enchanting city of Cafayate, Salta. Immerse yourself in its vibrant events, rich culture, and breathtaking landscapes. As a software developer, you'll have the opportunity to contribute to this unique project, enhancing user experiences, optimizing functionalities, and unleashing your creativity. Join us and be part of an innovative team dedicated to bringing this magical destination closer to the world through cutting-edge technology. Let's code the future of tourism together!`,
     image: 'Images/Caf-present.png',
     technology: ['CSS', 'HTML', , 'JavaScript'],
-    source: '',
-    live: '',
+    source: 'https://github.com/ulises2607/cayafate-project',
+    live: 'https://ulises2607.github.io/cayafate-project/',
   },
   {
     id: 1,
@@ -164,10 +164,10 @@ function createModal() {
           </div>
           <div class="descript-btn">
             <button>
-              <a class="modal-btn" href="#">See Live</a><img class="modal-btn" src="./Images/Icon - Export.svg" alt="Export">
+              <a class="modal-btn" href=${projSelect.live}>See Live</a><img class="modal-btn" src="./Images/Icon - Export.svg" alt="Export">
             </button>
             <button>
-              <a class="modal-btn" href="https://github.com/ulises2607/Portfolio">See Source</a> <img class="modal-btn" src="./Images/Work/Frame.png"
+              <a class="modal-btn" href=${projSelect.source}>See Source</a> <img class="modal-btn" src="./Images/Work/Frame.png"
                 alt="Frame">
             </button>
           </div>
